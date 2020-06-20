@@ -11,6 +11,7 @@ jobs:
       - name: Discord Notification
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          GITHUB_ACTION: ${{ GITHUB_ACTION }}
         uses: Ilshidur/action-discord@0.0.2
         with: 
           args: 'The project {{ GITHUB_ACTION }} has new updates from {{ sender }}. aaaa'
