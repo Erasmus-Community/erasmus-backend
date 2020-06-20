@@ -67,4 +67,4 @@ yarn-debug.log*
 !/storage/.keep
 
 # Production generated files
-dist/
+dist/*
