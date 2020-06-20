@@ -10,7 +10,7 @@ datasource db {
 model Organisation {
   country     String?
   description String?
-  id          Int     @default(autoincrement()) @id
+  id          Int! @id(strategy: SEQUENCE) @sequence(name: "MY_SEQUENCE" initialValue:1 allocationSize:100)
   name        String?
 }
 

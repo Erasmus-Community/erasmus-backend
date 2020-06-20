@@ -1,4 +1,4 @@
-import { Controller, Post, Get, Param, Delete, HttpException, HttpStatus } from '@nestjs/common';
+import { Controller, Post, Get, Param, Delete, HttpException, HttpStatus, Put } from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
 import { Organisation } from 'generated/prisma-client';
 
@@ -16,6 +16,7 @@ export class OrganisationsController {
 
         let orgId = parseInt(id);
         if(isNaN(orgId)){ throw new HttpException({status: HttpStatus.NOT_FOUND, error: ":id must be an Integer"}, HttpStatus.NOT_FOUND) }
+        
         return await this.prisma.organisation.findOne({
             where: {
             id: orgId,
@@ -24,9 +25,29 @@ export class OrganisationsController {
     }
 
     @Post()
-    async create(): Promise<string> {
-        
-        return 'should create a new org';
+    async create(): Promise<Organisation> {
+        return await this.prisma.organisation.create({
+            data: {
+                country: "PT",
+                name: "Org to Test",
+                description: "this is a description"
+            }
+        });
+    }
+
+    @Put(':id')
+    async update(@Param('id') id: string): Promise<Organisation> {
+        let orgId = parseInt(id);
+        if(isNaN(orgId)){ throw new HttpException({status: HttpStatus.NOT_FOUND, error: ":id must be an Integer"}, HttpStatus.NOT_FOUND) }
+
+        return await this.prisma.organisation.update({
+            where: {
+                id: orgId
+            },
+            data: {
+                name: "testing update"
+            }
+        });
     }
 
     @Delete(':id')

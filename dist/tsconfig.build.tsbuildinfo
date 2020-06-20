@@ -1556,15 +1556,9 @@
         "signature": "d7d469703b78beba76d511957f8c8b534c3bbb02bea7ab4705c65ef573532fb8",
         "affectsGlobalScope": false
       },
-<<<<<<< HEAD
       "../node_modules/rxjs/internal/observable/never.d.ts": {
         "version": "74c8c3057669c03264263d911d0f82e876cef50b05be21c54fef23c900de0420",
         "signature": "74c8c3057669c03264263d911d0f82e876cef50b05be21c54fef23c900de0420",
-=======
-      "../src/users/users.module.ts": {
-        "version": "da805b45dfe4b5683e6cb928f5986b49c867cfd86ab0873ca83a636c427b2d02",
-        "signature": "aa1725e38b5a0b4009f6a74f296f173e7926c119a60454dbd2e523861735df69",
->>>>>>> origin/dev/paulo
         "affectsGlobalScope": false
       },
       "../node_modules/rxjs/internal/observable/of.d.ts": {
@@ -1572,7 +1566,6 @@
         "signature": "b303eda2ff2d582a9c3c5ecb708fb57355cdc25e8c8197a9f66d4d1bf09fda19",
         "affectsGlobalScope": false
       },
-<<<<<<< HEAD
       "../node_modules/rxjs/internal/observable/onerrorresumenext.d.ts": {
         "version": "4e5dc89fa22ff43da3dee1db97d5add0591ebaff9e4adef6c8b6f0b41f0f60f0",
         "signature": "4e5dc89fa22ff43da3dee1db97d5add0591ebaff9e4adef6c8b6f0b41f0f60f0",
@@ -1591,31 +1584,6 @@
       "../node_modules/rxjs/internal/observable/race.d.ts": {
         "version": "9200f1759b84cc96ffd483ea718fa9db83567a0393c5598a53ca5f22284795d5",
         "signature": "9200f1759b84cc96ffd483ea718fa9db83567a0393c5598a53ca5f22284795d5",
-=======
-      "../node_modules/@types/passport-jwt/index.d.ts": {
-        "version": "d306be26f96b4bd9b279cd7da9d1355d5ce4060a2bb254489c1b95c87057eb38",
-        "signature": "d306be26f96b4bd9b279cd7da9d1355d5ce4060a2bb254489c1b95c87057eb38",
-        "affectsGlobalScope": false
-      },
-      "../src/auth/jwt.strategy.ts": {
-        "version": "7b08542b86453f402c61681b627ad6b03e8ab458e4a6511fe365eb5be275658a",
-        "signature": "e3e047e8cb263193af5ebae4c6030f0ddb84e6b3c6f8c8be3413ceae2c89969a",
-        "affectsGlobalScope": false
-      },
-      "../src/auth/auth.module.ts": {
-        "version": "e6c7d755bf615610909a44e8c4153070e15642dc2847dbfa22b66696b00f9adb",
-        "signature": "a28b5c0c372fb375910b3fe3c3ce4331509bc18ccef7cc39c9ee9d8daf8225d1",
-        "affectsGlobalScope": false
-      },
-      "../src/organisations/organisations.controller.ts": {
-        "version": "4436094929cf9f8b72e98edb8b6cc3339573e61b664bd161ad2dfdd96315b1d6",
-        "signature": "0b2d9d39d4f03ececfdfdafc58cc5e956be5c0c32cbf61133a1b994256e220b6",
-        "affectsGlobalScope": false
-      },
-      "../src/app.module.ts": {
-        "version": "92b7da5637d3a6a795bf5753a74733915c13362dd22b1ea03aab365844944ec1",
-        "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
->>>>>>> origin/dev/paulo
         "affectsGlobalScope": false
       },
       "../node_modules/rxjs/internal/observable/range.d.ts": {
@@ -2499,8 +2467,8 @@
         "affectsGlobalScope": false
       },
       "../src/organisations/organisations.controller.ts": {
-        "version": "7bbd5e665a6e9f496935ca4051e8dc25fd400b098c460dfd9c0f787e01c33615",
-        "signature": "8414165fdecf95b7ec85315ffece9c49bb5ffdaedca208359b6c1cea6e98054f",
+        "version": "0a6c1e83fe1b0524f76515cfc850b8fc1b60f1bff031917999beb48b026e527b",
+        "signature": "454f0b1d90aaeaaa3870e0de7a8cf5da8e484c04e39e9c2291a2616a75230a28",
         "affectsGlobalScope": false
       },
       "../src/prisma/prisma.module.ts": {
@@ -9690,16 +9658,7 @@
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
-<<<<<<< HEAD
         "../node_modules/@types/node/util.d.ts"
-=======
-        "../node_modules/@types/node/util.d.ts",
-        "../src/app.controller.ts",
-        "../src/app.service.ts",
-        "../src/auth/auth.module.ts",
-        "../src/organisations/organisations.controller.ts",
-        "../src/users/users.module.ts"
->>>>>>> origin/dev/paulo
       ],
       "../node_modules/@nestjs/core/middleware/index.d.ts": [
         "../node_modules/@nestjs/core/middleware/builder.d.ts",
@@ -9781,21 +9740,8 @@
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
-<<<<<<< HEAD
       "../node_modules/@nestjs/core/services/index.d.ts": [
         "../node_modules/@nestjs/core/services/reflector.service.d.ts",
-=======
-      "../src/organisations/organisations.controller.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@types/graceful-fs/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts"
-      ],
-      "../src/users/users.module.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
->>>>>>> origin/dev/paulo
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
