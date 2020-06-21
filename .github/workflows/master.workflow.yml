@@ -17,5 +17,6 @@ jobs:
         uses: Ilshidur/action-discord@master
         with: 
           args: '>>> {{GITHUB_ACTOR}} pushed:
-                commit {{GITHUB_SHA}}
-                to master'
+                [commit](https://github.com/Erasmus-Community/erasmus-backend/commit/{{GITHUB_SHA}}
+                to master
+                >>>'
