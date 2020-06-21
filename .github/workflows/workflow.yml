@@ -1,7 +1,29 @@
 name: CI
 
 on: 
-  pull_requests: [master]
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Discord Notification
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_AVATAR: https://octodex.github.com/images/ironcat.jpg
+          DISCORD_USERNAME: IRONBOT
+        uses: Ilshidur/action-discord@master
+        with: 
+          args: '>>> A new pull request was made by {{GITHUB_ACTOR}}'
+
+on: 
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -18,4 +40,5 @@ jobs:
         with: 
           args: '>>> {{GITHUB_ACTOR}} pushed:
                 commit {{GITHUB_SHA}}
-                to {{GITHUB_REPOSITORY}} at {{GITHUB_REF}}'
+                to master'
+
