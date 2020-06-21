@@ -11,7 +11,8 @@ jobs:
       - name: Discord Notification
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-          GITHUB_ACTION: GITHUB_ACTION
+          DISCORD_AVATAR: https://octodex.github.com/images/ironcat.jpg
+          DISCORD_USERNAME: IRONBOT
         uses: Ilshidur/action-discord@master
         with: 
           args: '{{GITHUB_ACTOR}} pushed the commit {{GITHUB_SHA}} to {{GITHUB_REPOSITORY}}'
