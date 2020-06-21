@@ -1,0 +1,22 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Organisation {
+  country     String?
+  description String?
+  id          Int! @id(strategy: SEQUENCE) @sequence(name: "MY_SEQUENCE" initialValue:1 allocationSize:100)
+  name        String?
+}
+
+// The underlying table does not contain a unique identifier and can therefore currently not be handled.
+// model User {
+  // email    String?
+  // name     String?
+  // password String?
+// }

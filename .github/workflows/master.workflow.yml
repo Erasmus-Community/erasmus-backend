@@ -1,0 +1,21 @@
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Discord Notification
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_AVATAR: https://octodex.github.com/images/ironcat.jpg
+          DISCORD_USERNAME: IRONBOT
+        uses: Ilshidur/action-discord@master
+        with: 
+          args: '>>> {{GITHUB_ACTOR}} pushed:
+                commit {{GITHUB_SHA}}
+                to master'
