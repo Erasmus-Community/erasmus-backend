@@ -14,4 +14,4 @@ jobs:
           GITHUB_ACTION: GITHUB_ACTION
         uses: Ilshidur/action-discord@0.0.2
         with: 
-          args: 'The project {{ GITHUB_ACTION }} has new updates from {{ sender }}. aaaa'
+          args: '🚫 JokeAPI CI run failed (https://github.com/Sv443/JokeAPI/commit/{{GITHUB_SHA}}/checks)'
