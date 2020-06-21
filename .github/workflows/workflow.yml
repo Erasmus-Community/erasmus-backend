@@ -15,4 +15,7 @@ jobs:
           DISCORD_USERNAME: IRONBOT
         uses: Ilshidur/action-discord@master
         with: 
-          args: '{{GITHUB_ACTOR}} pushed the commit {{GITHUB_SHA}} to {{GITHUB_REPOSITORY}}'
+          args: '```{{GITHUB_ACTOR}} pushed:
+                commit {{GITHUB_SHA}} 
+                to {{GITHUB_REPOSITORY}} at {{GITHUB_REF}}
+                ```'
