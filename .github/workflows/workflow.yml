@@ -14,4 +14,4 @@ jobs:
           GITHUB_ACTION: GITHUB_ACTION
         uses: Ilshidur/action-discord@master
         with: 
-          args: '🚫 JokeAPI CI run failed (https://github.com/Sv443/JokeAPI/commit/{{GITHUB_SHA}}/checks)'
+          args: '{{GITHUB_ACTOR}} pushed the commit {{GITHUB_SHA}} to {{GITHUB_REPOSITORY}}'
