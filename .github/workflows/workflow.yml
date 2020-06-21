@@ -12,6 +12,6 @@ jobs:
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           GITHUB_ACTION: GITHUB_ACTION
-        uses: Ilshidur/action-discord@0.0.2
+        uses: Ilshidur/action-discord@master
         with: 
           args: '🚫 JokeAPI CI run failed (https://github.com/Sv443/JokeAPI/commit/{{GITHUB_SHA}}/checks)'
