@@ -18,4 +18,5 @@ jobs:
         with: 
           args: '>>> {{GITHUB_ACTOR}} pushed:
                 [commit](https://github.com/Erasmus-Community/erasmus-backend/commit/{{GITHUB_SHA}}
-                to master'
+                to master
+                >>>'
