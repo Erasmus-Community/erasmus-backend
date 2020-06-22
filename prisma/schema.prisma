@@ -10,13 +10,13 @@ datasource db {
 model Organisation {
   country     String?
   description String?
-  id          Int! @id(strategy: SEQUENCE) @sequence(name: "MY_SEQUENCE" initialValue:1 allocationSize:100)
+  id          Int     @default(autoincrement()) @id
   name        String?
 }
 
-// The underlying table does not contain a unique identifier and can therefore currently not be handled.
-// model User {
-  // email    String?
-  // name     String?
-  // password String?
-// }
+model User {
+  email    String?
+  id       Int     @default(autoincrement()) @id
+  name     String?
+  password String?
+}

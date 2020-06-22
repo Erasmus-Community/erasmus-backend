@@ -1,6 +1,6 @@
 import { Controller, Post, Get, Param, Delete, HttpException, HttpStatus, Put } from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
-import { Organisation } from 'generated/prisma-client';
+import { Organisation } from '@prisma/client';
 
 @Controller('organisations')
 export class OrganisationsController {

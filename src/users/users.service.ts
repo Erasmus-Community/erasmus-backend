@@ -1,32 +1,57 @@
-import { Injectable } from '@nestjs/common';
+import { Param, Get, HttpException, HttpStatus, Post, Put, Delete, Controller } from '@nestjs/common';
+import { PrismaService } from 'src/prisma/prisma.service';
+import { User } from '@prisma/client';
 
-export type User = any;
-
-@Injectable()
+@Controller('users')
 export class UsersService {
-  private readonly users: User[];
 
-  constructor() {
-    this.users = [
-      {
-        userId: 1,
-        username: 'john',
-        password: 'changeme',
-      },
-      {
-        userId: 2,
-        username: 'chris',
-        password: 'secret',
-      },
-      {
-        userId: 3,
-        username: 'maria',
-        password: 'guess',
-      },
-    ];
+  constructor(private prismaService: PrismaService) {}
+  
+  @Get(':id')
+  async getUser(@Param('id') id: string): Promise<User> {
+
+    let userId = parseInt(id);
+    if(isNaN(userId)){ throw new HttpException({status: HttpStatus.NOT_FOUND, error: ":id must be an Integer"}, HttpStatus.NOT_FOUND) }
+    
+    return await this.prismaService.user.findOne({
+      where: {
+        id: userId
+      }
+    });
   }
 
-  async findOne(username: string): Promise<User | undefined> {
-    return this.users.find(user => user.username === username);
+  @Post('')
+  async createUser(){
+    return await this.prismaService.user.create({
+      data: {
+        name: '',
+        email: '',
+        password: ''
+      }
+    });
+  }
+
+  @Put(':id')
+  async updateUser(){
+    return await this.prismaService.user.update({
+      where: {},
+      data: {
+        name: '',
+        email: '',
+        password: ''
+      }
+    });
+  }
+
+  @Delete(':id')
+  async deleteUser(@Param('id') id: string){
+    let userId = parseInt(id);
+    if(isNaN(userId)){ throw new HttpException({status: HttpStatus.NOT_FOUND, error: ":id must be an Integer"}, HttpStatus.NOT_FOUND) }
+    
+    return await this.prismaService.user.delete({
+      where: {
+        id: userId
+      }
+    })
   }
 }
