@@ -1,18 +1,15 @@
-import { Param, Get, HttpException, HttpStatus, Post, Put, Delete, Controller } from '@nestjs/common';
+import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
 import { User } from '@prisma/client';
 
-@Controller('users')
+@Injectable()
 export class UsersService {
 
   constructor(private prismaService: PrismaService) {}
   
-  @Get(':id')
-  async getUser(@Param('id') id: string): Promise<User> {
+  async getUser(id: string): Promise<User> {
+    const userId = this.parseId(id);
 
-    let userId = parseInt(id);
-    if(isNaN(userId)){ throw new HttpException({status: HttpStatus.NOT_FOUND, error: ":id must be an Integer"}, HttpStatus.NOT_FOUND) }
-    
     return await this.prismaService.user.findOne({
       where: {
         id: userId
@@ -20,19 +17,17 @@ export class UsersService {
     });
   }
 
-  @Post('')
-  async createUser(){
+  async createUser(email: string, password: string): Promise<User> {
     return await this.prismaService.user.create({
       data: {
         name: '',
-        email: '',
-        password: ''
+        email: email,
+        password: password
       }
     });
   }
 
-  @Put(':id')
-  async updateUser(){
+  async updateUser(): Promise<User> {
     return await this.prismaService.user.update({
       where: {},
       data: {
@@ -43,15 +38,19 @@ export class UsersService {
     });
   }
 
-  @Delete(':id')
-  async deleteUser(@Param('id') id: string){
-    let userId = parseInt(id);
-    if(isNaN(userId)){ throw new HttpException({status: HttpStatus.NOT_FOUND, error: ":id must be an Integer"}, HttpStatus.NOT_FOUND) }
-    
+  async deleteUser(id: string){
+    const userId = this.parseId(id);
+
     return await this.prismaService.user.delete({
       where: {
         id: userId
       }
     })
+  }
+
+  private parseId(id: string) {
+    let userId = parseInt(id);
+    if(isNaN(userId)){ throw new HttpException({status: HttpStatus.NOT_FOUND, error: ":id must be an Integer"}, HttpStatus.NOT_FOUND) }
+    return userId;
   }
 }

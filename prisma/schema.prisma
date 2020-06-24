@@ -15,8 +15,8 @@ model Organisation {
 }
 
 model User {
-  email    String?
+  email    String  @unique
   id       Int     @default(autoincrement()) @id
   name     String?
-  password String?
+  password String
 }
