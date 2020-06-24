@@ -1,4 +1,4 @@
-import { Param, Get, HttpException, HttpStatus, Post, Put, Delete, Controller, Injectable } from '@nestjs/common';
+import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
 import { User } from '@prisma/client';
 
@@ -17,12 +17,12 @@ export class UsersService {
     });
   }
 
-  async createUser(): Promise<User> {
+  async createUser(email: string, password: string): Promise<User> {
     return await this.prismaService.user.create({
       data: {
         name: '',
-        email: '',
-        password: ''
+        email: email,
+        password: password
       }
     });
   }
