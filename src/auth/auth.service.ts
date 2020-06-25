@@ -1,11 +1,11 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { PrismaService } from 'src/prisma/prisma.service';
 import *  as bcrypt from 'bcrypt';
 import { User } from '@prisma/client';
 
-
 const saltRounds = 10;
+
 @Injectable()
 export class AuthService {
   constructor(
@@ -25,7 +25,7 @@ export class AuthService {
     });
     if(user === null){ return null; }
     
-    const match = this.checkPwd(pass,user.password);
+    const match = await this.checkPwd(pass,user.password);
     if(match){
       return user;
     }
@@ -38,6 +38,10 @@ export class AuthService {
   */
   async login(user: any) {
     const existingUser = await this.validateUser(user.email,user.password);
+    if(existingUser == null){
+      return new HttpException({status: HttpStatus.UNAUTHORIZED, error: "Email/Password wrong"}, HttpStatus.UNAUTHORIZED)
+    }
+
     const payload = { username: existingUser.email, sub: user.id };
     return {
       access_token: this.jwtService.sign(payload),
@@ -48,15 +52,13 @@ export class AuthService {
   * Encrypties the password to a hash to be stored in the DB
   */
   async encryptPwd(data: string): Promise<string>{
-    const hash = await bcrypt.hash(data,saltRounds);
-    return hash;
+    return await bcrypt.hash(data,saltRounds);
   }
   
   /*
   * Compares pwd with the userHash to see they are equal.
   */
   async checkPwd(pwd: string, userHash: string): Promise<boolean>{
-    const match  = await bcrypt.compare(pwd, userHash);
-    return match === true;
+    return await bcrypt.compare(pwd, userHash);
   }
 }
