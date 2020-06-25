@@ -1,66 +1,33 @@
-import { Controller, Post, Get, Param, Delete, HttpException, HttpStatus, Put } from '@nestjs/common';
-import { PrismaService } from 'src/prisma/prisma.service';
+import { Controller, Post, Get, Param, Delete, Put } from '@nestjs/common';
 import { Organisation } from '@prisma/client';
+import { OrganisationsService } from './organisations.service';
 
 @Controller('organisations')
 export class OrganisationsController {
-    constructor( private readonly prisma: PrismaService){}
+    constructor(private organisationsService: OrganisationsService){}
 
     @Get()
-    async organisations(): Promise<Organisation[]> {
-        return await this.prisma.organisation.findMany();
+    async getOrgs(): Promise<Organisation[]> {
+        return await this.organisationsService.findAllOrgs();
     }
 
     @Get(':id')
-    async findOne(@Param('id') id: string): Promise<Organisation> {
-
-        let orgId = parseInt(id);
-        if(isNaN(orgId)){ throw new HttpException({status: HttpStatus.NOT_FOUND, error: ":id must be an Integer"}, HttpStatus.NOT_FOUND) }
-        
-        return await this.prisma.organisation.findOne({
-            where: {
-            id: orgId,
-            }
-        });
+    async findOrgById(@Param('id') id: string): Promise<Organisation> {
+        return await this.organisationsService.findOrgById(id);
     }
 
     @Post()
     async create(): Promise<Organisation> {
-        return await this.prisma.organisation.create({
-            data: {
-                country: "PT",
-                name: "Org to Test",
-                description: "this is a description"
-            }
-        });
+        return await this.organisationsService.createOrg();
     }
 
     @Put(':id')
     async update(@Param('id') id: string): Promise<Organisation> {
-        let orgId = parseInt(id);
-        if(isNaN(orgId)){ throw new HttpException({status: HttpStatus.NOT_FOUND, error: ":id must be an Integer"}, HttpStatus.NOT_FOUND) }
-
-        return await this.prisma.organisation.update({
-            where: {
-                id: orgId
-            },
-            data: {
-                name: "testing update"
-            }
-        });
+        return await this.organisationsService.updateOrganisationById(id);
     }
 
     @Delete(':id')
     async delete(@Param('id') id: string): Promise<string> {
-        let orgId = parseInt(id);
-        if(isNaN(orgId)){ throw new HttpException({status: HttpStatus.NOT_FOUND, error: ":id must be an Integer"}, HttpStatus.NOT_FOUND) }
-        
-        let org: Organisation = await this.prisma.organisation.delete({
-            where: {
-                id: orgId
-            }
-        })
-        if(org) { return "ok"; }
-        else{ return "no org was found"; }
+        return await this.organisationsService.deleteOrganisationById(id);
     }
 }
