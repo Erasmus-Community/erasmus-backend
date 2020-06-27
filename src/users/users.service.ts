@@ -1,4 +1,4 @@
-import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
 import { User } from '@prisma/client';
 
@@ -7,12 +7,10 @@ export class UsersService {
 
   constructor(private prismaService: PrismaService) {}
   
-  async getUser(id: string): Promise<User> {
-    const userId = this.parseId(id);
-
+  async getUser(id: number): Promise<User> {
     return await this.prismaService.user.findOne({
       where: {
-        id: userId
+        id: id
       }
     });
   }
@@ -38,19 +36,11 @@ export class UsersService {
     });
   }
 
-  async deleteUser(id: string){
-    const userId = this.parseId(id);
-
+  async deleteUser(id: number){
     return await this.prismaService.user.delete({
       where: {
-        id: userId
+        id: id
       }
     })
-  }
-
-  private parseId(id: string) {
-    let userId = parseInt(id);
-    if(isNaN(userId)){ throw new HttpException({status: HttpStatus.NOT_FOUND, error: ":id must be an Integer"}, HttpStatus.NOT_FOUND) }
-    return userId;
   }
 }
