@@ -1136,11 +1136,6 @@
         "signature": "20ee20a65a201299c1f4ba6fe931f3ad46d67e8a8cc2a52b9d162bb77aca23e6",
         "affectsGlobalScope": false
       },
-      "../src/app.service.ts": {
-        "version": "eaf8514ce110fa428a93a27408df4d06d133dbd9ed0a775c315ddfdd507853a9",
-        "signature": "653711fba8904aa27fd8911b63cf526e7b334e13a292da4cefdbbe179ac3f3f2",
-        "affectsGlobalScope": false
-      },
       "../node_modules/@types/node/globals.d.ts": {
         "version": "0a08f81d125dd658353234b6553bf48baa0104257f939f83dcd696a320cf5543",
         "signature": "0a08f81d125dd658353234b6553bf48baa0104257f939f83dcd696a320cf5543",
@@ -1449,116 +1444,6 @@
       "../src/prisma/prisma.service.ts": {
         "version": "3ae6b7988e3166a721e93d75f3d05db096f0eb287e675e6b3ce1ebd61a7b573d",
         "signature": "a1cbf9ae2f534dd5e161891e78b972f034b390ab866203f3d8bf1715561b2640",
-        "affectsGlobalScope": false
-      },
-      "../src/auth/auth.service.ts": {
-        "version": "ccb8d7beeef332c847738a1a6452530f9edcfee7b9194f2273bf18ce061dd9d7",
-        "signature": "07a523ceec2a1cf1b4c387653d20728acce4b864bdd530a59e2904b53f8b8913",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/passport/dist/abstract.strategy.d.ts": {
-        "version": "ba63131c5e91f797736444933af16ffa42f9f8c150d859ec65f568f037a416ea",
-        "signature": "ba63131c5e91f797736444933af16ffa42f9f8c150d859ec65f568f037a416ea",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/passport/dist/interfaces/auth-module.options.d.ts": {
-        "version": "142e2e1abd8603dfdeaa1c88d73003a7912aa949b3a19234fa91f729ebfa2fcc",
-        "signature": "142e2e1abd8603dfdeaa1c88d73003a7912aa949b3a19234fa91f729ebfa2fcc",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/passport/dist/interfaces/type.interface.d.ts": {
-        "version": "340a45cd77b41d8a6deda248167fa23d3dc67ec798d411bd282f7b3d555b1695",
-        "signature": "340a45cd77b41d8a6deda248167fa23d3dc67ec798d411bd282f7b3d555b1695",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/passport/dist/interfaces/index.d.ts": {
-        "version": "0e9aa853b5eb2ca09e0e3e3eb94cbd1d5fb3d682ab69817d4d11fe225953fc57",
-        "signature": "0e9aa853b5eb2ca09e0e3e3eb94cbd1d5fb3d682ab69817d4d11fe225953fc57",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/passport/dist/auth.guard.d.ts": {
-        "version": "ed3d649f392137d472c9ce2feedfe1bb97926edb8fae919a72af719b4112cd6b",
-        "signature": "ed3d649f392137d472c9ce2feedfe1bb97926edb8fae919a72af719b4112cd6b",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/passport/dist/passport.module.d.ts": {
-        "version": "793c353144f16601da994fa4e62c09b7525836ce999c44f69c28929072ca206a",
-        "signature": "793c353144f16601da994fa4e62c09b7525836ce999c44f69c28929072ca206a",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/range-parser/index.d.ts": {
-        "version": "4e88b833be14c7f384e0dcd57bb30acd799e8e34d212635d693e41a75a71164b",
-        "signature": "4e88b833be14c7f384e0dcd57bb30acd799e8e34d212635d693e41a75a71164b",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/qs/index.d.ts": {
-        "version": "b9cd23278040e3d4ea73660829a5c0d25cc303e493f79668e605f69edaf6d7b7",
-        "signature": "b9cd23278040e3d4ea73660829a5c0d25cc303e493f79668e605f69edaf6d7b7",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/express-serve-static-core/index.d.ts": {
-        "version": "814f4d16f7e7c47feaba5979673dcc60b6d5f7e87b247ea5da1dbc83a6da9387",
-        "signature": "814f4d16f7e7c47feaba5979673dcc60b6d5f7e87b247ea5da1dbc83a6da9387",
-        "affectsGlobalScope": true
-      },
-      "../node_modules/@types/mime/index.d.ts": {
-        "version": "be27a64e821a3e5af838650e4aa25805c60f057d0c37a9762c378d19d364b3e6",
-        "signature": "be27a64e821a3e5af838650e4aa25805c60f057d0c37a9762c378d19d364b3e6",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/serve-static/index.d.ts": {
-        "version": "5b56da2c458a9522dbfec8ee94287abe037f52fc9dea766d87bd9aaf100cf14f",
-        "signature": "5b56da2c458a9522dbfec8ee94287abe037f52fc9dea766d87bd9aaf100cf14f",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/connect/index.d.ts": {
-        "version": "e6ffa74698f0a1d23e4223242ed7dcdb89d02bbbb063a1930e9f91d0385abe16",
-        "signature": "e6ffa74698f0a1d23e4223242ed7dcdb89d02bbbb063a1930e9f91d0385abe16",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/body-parser/index.d.ts": {
-        "version": "ebddbd167c2fabd0151f50e5df94ca6d845149c47521280d8867afe3429dd078",
-        "signature": "ebddbd167c2fabd0151f50e5df94ca6d845149c47521280d8867afe3429dd078",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/express/index.d.ts": {
-        "version": "ead1ed9dd4874f4907a506a31e4fe9c4e079b42816f6b7ea5016a6d5ddf2fde3",
-        "signature": "ead1ed9dd4874f4907a506a31e4fe9c4e079b42816f6b7ea5016a6d5ddf2fde3",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/passport/index.d.ts": {
-        "version": "72d8d36357d5df427b52623e24f7dddf1a59758af57a2f257ff06041c0e7a3b4",
-        "signature": "72d8d36357d5df427b52623e24f7dddf1a59758af57a2f257ff06041c0e7a3b4",
-        "affectsGlobalScope": true
-      },
-      "../node_modules/@nestjs/passport/dist/passport/passport.serializer.d.ts": {
-        "version": "599ac4a84b7aa6a298731179ec1663a623ff8ac324cdc1dabb9c73c1259dc854",
-        "signature": "599ac4a84b7aa6a298731179ec1663a623ff8ac324cdc1dabb9c73c1259dc854",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/passport/dist/passport/passport.strategy.d.ts": {
-        "version": "100509817f7a12b93f2ca4e07c1e3fe7f73ce2cbe2d69b609df2bf35fbbe7cf8",
-        "signature": "100509817f7a12b93f2ca4e07c1e3fe7f73ce2cbe2d69b609df2bf35fbbe7cf8",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/passport/dist/index.d.ts": {
-        "version": "585bc61f439c027640754dd26e480afa202f33e51db41ee283311a59c12c62e7",
-        "signature": "585bc61f439c027640754dd26e480afa202f33e51db41ee283311a59c12c62e7",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/passport/index.d.ts": {
-        "version": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
-        "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
-        "affectsGlobalScope": false
-      },
-      "../src/auth/jwt-auth.guard.ts": {
-        "version": "51fc903ffa25cb72c7ecc1aa1fed8c9d5bf7c6dd2f7f0efe9d5fa1d7490b020c",
-        "signature": "e9629b89f6cd33a040577695d89edf882e66287d30c87121f5fc07f404decd25",
-        "affectsGlobalScope": false
-      },
-      "../src/users/users.service.ts": {
-        "version": "c3ba47be951f15afcaf8f372c87358be39ad344a44e289a6db242861141558ee",
-        "signature": "e38d86dd2d64b8b70df2d01dcc2414d9baca852b036721be8973e2d7bc6c7c61",
         "affectsGlobalScope": false
       },
       "../node_modules/class-validator/types/validation/validationerror.d.ts": {
@@ -2181,9 +2066,119 @@
         "signature": "6c7c3ad0d8503662be36fcb84f9283282ba9b4d18d038963d29594b723cd9059",
         "affectsGlobalScope": false
       },
+      "../src/auth/auth.service.ts": {
+        "version": "d024440c2b2b035ad6a22cd87cba03887913cf38ecda462b6fafc8f3bd0751a4",
+        "signature": "bc1c86507e42274b576dbf3268bb119cce3d215c3e82c25ad9f6e4b88d497195",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/passport/dist/abstract.strategy.d.ts": {
+        "version": "ba63131c5e91f797736444933af16ffa42f9f8c150d859ec65f568f037a416ea",
+        "signature": "ba63131c5e91f797736444933af16ffa42f9f8c150d859ec65f568f037a416ea",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/passport/dist/interfaces/auth-module.options.d.ts": {
+        "version": "142e2e1abd8603dfdeaa1c88d73003a7912aa949b3a19234fa91f729ebfa2fcc",
+        "signature": "142e2e1abd8603dfdeaa1c88d73003a7912aa949b3a19234fa91f729ebfa2fcc",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/passport/dist/interfaces/type.interface.d.ts": {
+        "version": "340a45cd77b41d8a6deda248167fa23d3dc67ec798d411bd282f7b3d555b1695",
+        "signature": "340a45cd77b41d8a6deda248167fa23d3dc67ec798d411bd282f7b3d555b1695",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/passport/dist/interfaces/index.d.ts": {
+        "version": "0e9aa853b5eb2ca09e0e3e3eb94cbd1d5fb3d682ab69817d4d11fe225953fc57",
+        "signature": "0e9aa853b5eb2ca09e0e3e3eb94cbd1d5fb3d682ab69817d4d11fe225953fc57",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/passport/dist/auth.guard.d.ts": {
+        "version": "ed3d649f392137d472c9ce2feedfe1bb97926edb8fae919a72af719b4112cd6b",
+        "signature": "ed3d649f392137d472c9ce2feedfe1bb97926edb8fae919a72af719b4112cd6b",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/passport/dist/passport.module.d.ts": {
+        "version": "793c353144f16601da994fa4e62c09b7525836ce999c44f69c28929072ca206a",
+        "signature": "793c353144f16601da994fa4e62c09b7525836ce999c44f69c28929072ca206a",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/range-parser/index.d.ts": {
+        "version": "4e88b833be14c7f384e0dcd57bb30acd799e8e34d212635d693e41a75a71164b",
+        "signature": "4e88b833be14c7f384e0dcd57bb30acd799e8e34d212635d693e41a75a71164b",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/qs/index.d.ts": {
+        "version": "b9cd23278040e3d4ea73660829a5c0d25cc303e493f79668e605f69edaf6d7b7",
+        "signature": "b9cd23278040e3d4ea73660829a5c0d25cc303e493f79668e605f69edaf6d7b7",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/express-serve-static-core/index.d.ts": {
+        "version": "814f4d16f7e7c47feaba5979673dcc60b6d5f7e87b247ea5da1dbc83a6da9387",
+        "signature": "814f4d16f7e7c47feaba5979673dcc60b6d5f7e87b247ea5da1dbc83a6da9387",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/@types/mime/index.d.ts": {
+        "version": "be27a64e821a3e5af838650e4aa25805c60f057d0c37a9762c378d19d364b3e6",
+        "signature": "be27a64e821a3e5af838650e4aa25805c60f057d0c37a9762c378d19d364b3e6",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/serve-static/index.d.ts": {
+        "version": "5b56da2c458a9522dbfec8ee94287abe037f52fc9dea766d87bd9aaf100cf14f",
+        "signature": "5b56da2c458a9522dbfec8ee94287abe037f52fc9dea766d87bd9aaf100cf14f",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/connect/index.d.ts": {
+        "version": "e6ffa74698f0a1d23e4223242ed7dcdb89d02bbbb063a1930e9f91d0385abe16",
+        "signature": "e6ffa74698f0a1d23e4223242ed7dcdb89d02bbbb063a1930e9f91d0385abe16",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/body-parser/index.d.ts": {
+        "version": "ebddbd167c2fabd0151f50e5df94ca6d845149c47521280d8867afe3429dd078",
+        "signature": "ebddbd167c2fabd0151f50e5df94ca6d845149c47521280d8867afe3429dd078",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/express/index.d.ts": {
+        "version": "ead1ed9dd4874f4907a506a31e4fe9c4e079b42816f6b7ea5016a6d5ddf2fde3",
+        "signature": "ead1ed9dd4874f4907a506a31e4fe9c4e079b42816f6b7ea5016a6d5ddf2fde3",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/passport/index.d.ts": {
+        "version": "72d8d36357d5df427b52623e24f7dddf1a59758af57a2f257ff06041c0e7a3b4",
+        "signature": "72d8d36357d5df427b52623e24f7dddf1a59758af57a2f257ff06041c0e7a3b4",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/@nestjs/passport/dist/passport/passport.serializer.d.ts": {
+        "version": "599ac4a84b7aa6a298731179ec1663a623ff8ac324cdc1dabb9c73c1259dc854",
+        "signature": "599ac4a84b7aa6a298731179ec1663a623ff8ac324cdc1dabb9c73c1259dc854",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/passport/dist/passport/passport.strategy.d.ts": {
+        "version": "100509817f7a12b93f2ca4e07c1e3fe7f73ce2cbe2d69b609df2bf35fbbe7cf8",
+        "signature": "100509817f7a12b93f2ca4e07c1e3fe7f73ce2cbe2d69b609df2bf35fbbe7cf8",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/passport/dist/index.d.ts": {
+        "version": "585bc61f439c027640754dd26e480afa202f33e51db41ee283311a59c12c62e7",
+        "signature": "585bc61f439c027640754dd26e480afa202f33e51db41ee283311a59c12c62e7",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/passport/index.d.ts": {
+        "version": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
+        "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
+        "affectsGlobalScope": false
+      },
+      "../src/auth/jwt-auth.guard.ts": {
+        "version": "51fc903ffa25cb72c7ecc1aa1fed8c9d5bf7c6dd2f7f0efe9d5fa1d7490b020c",
+        "signature": "e9629b89f6cd33a040577695d89edf882e66287d30c87121f5fc07f404decd25",
+        "affectsGlobalScope": false
+      },
+      "../src/users/users.service.ts": {
+        "version": "c3ba47be951f15afcaf8f372c87358be39ad344a44e289a6db242861141558ee",
+        "signature": "e38d86dd2d64b8b70df2d01dcc2414d9baca852b036721be8973e2d7bc6c7c61",
+        "affectsGlobalScope": false
+      },
       "../src/app.controller.ts": {
-        "version": "a18fb9f7a8590f06f77b7998a42b44bee007f70db77bbda12fa3bbc00ed07511",
-        "signature": "2dcec5b43ed3863f760f1f6487a1f83471f3dd10c5ddb2afca3e43013135cdbd",
+        "version": "af4e39f6e1841987342a78bf06a245035711d6ab1e353cbd4368590ab4baa357",
+        "signature": "15d8a46953f04aa862f5b77fe019dbd352d3de366b4ff0a43666c84ddfe304d8",
         "affectsGlobalScope": false
       },
       "../src/prisma/prisma.module.ts": {
@@ -2237,7 +2232,7 @@
         "affectsGlobalScope": false
       },
       "../src/users/users.controller.ts": {
-        "version": "1568ba7ade92d498e198bf6bbaf91b5cf6fae3219ae3d5d62415337dbaa21140",
+        "version": "578247a1866920c428469d165c732ecd8730518c58cfe8f1f80923a9136544a9",
         "signature": "66d7930a7192e20beff161a783d50b193ef6b96cf5094868e2a62b4274ae7a8e",
         "affectsGlobalScope": false
       },
@@ -2247,7 +2242,7 @@
         "affectsGlobalScope": false
       },
       "../src/app.module.ts": {
-        "version": "fe38d58b64110f5cc97ec4694d95c43614808a0e7c0f8b76969a6f34589b0949",
+        "version": "39a9d841bdfaddf1f4b39fe36c6ad3b6136c601b6f60d46c62d8fd01a9796aa7",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
@@ -2432,7 +2427,7 @@
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
-        "version": "052567c5c58d7cc8727131aec4240e2318e21251e8ddb151fefda8a21e28b231",
+        "version": "3bf2fec680a3f6c9c048a45d3bca916bc4cb3b13963aa85a081218edef407df5",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -7285,7 +7280,6 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
-        "../src/app.service.ts",
         "../src/auth/auth.models.ts",
         "../src/auth/auth.service.ts",
         "../src/auth/jwt-auth.guard.ts",
@@ -7299,21 +7293,12 @@
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../src/app.controller.ts",
-        "../src/app.service.ts",
         "../src/auth/auth.module.ts",
         "../src/organisations/organisations.controller.ts",
         "../src/organisations/organisations.module.ts",
         "../src/prisma/prisma.module.ts",
         "../src/users/users.controller.ts",
         "../src/users/users.module.ts"
-      ],
-      "../src/app.service.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@types/graceful-fs/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts"
       ],
       "../src/auth/auth.models.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
@@ -7347,6 +7332,7 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
+        "../src/auth/auth.models.ts",
         "../src/prisma/prisma.service.ts"
       ],
       "../src/auth/constants.ts": [
@@ -7451,6 +7437,7 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
+        "../src/auth/jwt-auth.guard.ts",
         "../src/users/users.service.ts"
       ],
       "../src/users/users.module.ts": [
@@ -12074,7 +12061,6 @@
       "../src/app.controller.ts": [
         "../node_modules/.prisma/client/index.d.ts",
         "../node_modules/@nestjs/common/index.d.ts",
-        "../src/app.service.ts",
         "../src/auth/auth.models.ts",
         "../src/auth/auth.service.ts",
         "../src/users/users.service.ts"
@@ -12083,6 +12069,7 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/jwt/index.d.ts",
         "../node_modules/@prisma/client/index.d.ts",
+        "../src/auth/auth.models.ts",
         "../src/prisma/prisma.service.ts"
       ],
       "../src/auth/jwt-auth.guard.ts": [
@@ -12394,6 +12381,7 @@
       "../node_modules/@types/tough-cookie/index.d.ts",
       "../node_modules/@types/uglify-js/index.d.ts",
       "../node_modules/@types/uglify-js/node_modules/source-map/source-map.d.ts",
+      "../node_modules/@types/validator/index.d.ts",
       "../node_modules/@types/webpack-sources/index.d.ts",
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/webpack/node_modules/source-map/source-map.d.ts",
@@ -12401,6 +12389,128 @@
       "../node_modules/@types/yargs/index.d.ts",
       "../node_modules/anymatch/index.d.ts",
       "../node_modules/axios/index.d.ts",
+      "../node_modules/class-validator/types/container.d.ts",
+      "../node_modules/class-validator/types/decorator/array/arraycontains.d.ts",
+      "../node_modules/class-validator/types/decorator/array/arraymaxsize.d.ts",
+      "../node_modules/class-validator/types/decorator/array/arrayminsize.d.ts",
+      "../node_modules/class-validator/types/decorator/array/arraynotcontains.d.ts",
+      "../node_modules/class-validator/types/decorator/array/arraynotempty.d.ts",
+      "../node_modules/class-validator/types/decorator/array/arrayunique.d.ts",
+      "../node_modules/class-validator/types/decorator/common/allow.d.ts",
+      "../node_modules/class-validator/types/decorator/common/equals.d.ts",
+      "../node_modules/class-validator/types/decorator/common/isdefined.d.ts",
+      "../node_modules/class-validator/types/decorator/common/isempty.d.ts",
+      "../node_modules/class-validator/types/decorator/common/isin.d.ts",
+      "../node_modules/class-validator/types/decorator/common/islatitude.d.ts",
+      "../node_modules/class-validator/types/decorator/common/islatlong.d.ts",
+      "../node_modules/class-validator/types/decorator/common/islongitude.d.ts",
+      "../node_modules/class-validator/types/decorator/common/isnotempty.d.ts",
+      "../node_modules/class-validator/types/decorator/common/isnotin.d.ts",
+      "../node_modules/class-validator/types/decorator/common/isoptional.d.ts",
+      "../node_modules/class-validator/types/decorator/common/notequals.d.ts",
+      "../node_modules/class-validator/types/decorator/common/validate.d.ts",
+      "../node_modules/class-validator/types/decorator/common/validateby.d.ts",
+      "../node_modules/class-validator/types/decorator/common/validateif.d.ts",
+      "../node_modules/class-validator/types/decorator/common/validatenested.d.ts",
+      "../node_modules/class-validator/types/decorator/common/validatepromise.d.ts",
+      "../node_modules/class-validator/types/decorator/date/maxdate.d.ts",
+      "../node_modules/class-validator/types/decorator/date/mindate.d.ts",
+      "../node_modules/class-validator/types/decorator/decorators.d.ts",
+      "../node_modules/class-validator/types/decorator/number/isdivisibleby.d.ts",
+      "../node_modules/class-validator/types/decorator/number/isnegative.d.ts",
+      "../node_modules/class-validator/types/decorator/number/ispositive.d.ts",
+      "../node_modules/class-validator/types/decorator/number/max.d.ts",
+      "../node_modules/class-validator/types/decorator/number/min.d.ts",
+      "../node_modules/class-validator/types/decorator/object/isinstance.d.ts",
+      "../node_modules/class-validator/types/decorator/object/isnotemptyobject.d.ts",
+      "../node_modules/class-validator/types/decorator/string/contains.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isalpha.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isalphanumeric.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isascii.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isbase32.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isbase64.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isbic.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isbooleanstring.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isbtcaddress.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isbytelength.d.ts",
+      "../node_modules/class-validator/types/decorator/string/iscreditcard.d.ts",
+      "../node_modules/class-validator/types/decorator/string/iscurrency.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isdatauri.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isdatestring.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isdecimal.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isean.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isemail.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isethereumaddress.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isfirebasepushid.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isfqdn.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isfullwidth.d.ts",
+      "../node_modules/class-validator/types/decorator/string/ishalfwidth.d.ts",
+      "../node_modules/class-validator/types/decorator/string/ishash.d.ts",
+      "../node_modules/class-validator/types/decorator/string/ishexadecimal.d.ts",
+      "../node_modules/class-validator/types/decorator/string/ishexcolor.d.ts",
+      "../node_modules/class-validator/types/decorator/string/ishsl.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isiban.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isidentitycard.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isip.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isisbn.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isisin.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isiso31661alpha2.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isiso31661alpha3.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isiso8601.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isisrc.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isissn.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isjson.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isjwt.d.ts",
+      "../node_modules/class-validator/types/decorator/string/islocale.d.ts",
+      "../node_modules/class-validator/types/decorator/string/islowercase.d.ts",
+      "../node_modules/class-validator/types/decorator/string/ismacaddress.d.ts",
+      "../node_modules/class-validator/types/decorator/string/ismagneturi.d.ts",
+      "../node_modules/class-validator/types/decorator/string/ismilitarytime.d.ts",
+      "../node_modules/class-validator/types/decorator/string/ismimetype.d.ts",
+      "../node_modules/class-validator/types/decorator/string/ismobilephone.d.ts",
+      "../node_modules/class-validator/types/decorator/string/ismongoid.d.ts",
+      "../node_modules/class-validator/types/decorator/string/ismultibyte.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isnumberstring.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isoctal.d.ts",
+      "../node_modules/class-validator/types/decorator/string/ispassportnumber.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isphonenumber.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isport.d.ts",
+      "../node_modules/class-validator/types/decorator/string/ispostalcode.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isrfc3339.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isrgbcolor.d.ts",
+      "../node_modules/class-validator/types/decorator/string/issemver.d.ts",
+      "../node_modules/class-validator/types/decorator/string/issurrogatepair.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isuppercase.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isurl.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isuuid.d.ts",
+      "../node_modules/class-validator/types/decorator/string/isvariablewidth.d.ts",
+      "../node_modules/class-validator/types/decorator/string/length.d.ts",
+      "../node_modules/class-validator/types/decorator/string/matches.d.ts",
+      "../node_modules/class-validator/types/decorator/string/maxlength.d.ts",
+      "../node_modules/class-validator/types/decorator/string/minlength.d.ts",
+      "../node_modules/class-validator/types/decorator/string/notcontains.d.ts",
+      "../node_modules/class-validator/types/decorator/typechecker/isarray.d.ts",
+      "../node_modules/class-validator/types/decorator/typechecker/isboolean.d.ts",
+      "../node_modules/class-validator/types/decorator/typechecker/isdate.d.ts",
+      "../node_modules/class-validator/types/decorator/typechecker/isenum.d.ts",
+      "../node_modules/class-validator/types/decorator/typechecker/isint.d.ts",
+      "../node_modules/class-validator/types/decorator/typechecker/isnumber.d.ts",
+      "../node_modules/class-validator/types/decorator/typechecker/isobject.d.ts",
+      "../node_modules/class-validator/types/decorator/typechecker/isstring.d.ts",
+      "../node_modules/class-validator/types/decorator/validationoptions.d.ts",
+      "../node_modules/class-validator/types/index.d.ts",
+      "../node_modules/class-validator/types/metadata/constraintmetadata.d.ts",
+      "../node_modules/class-validator/types/metadata/metadatastorage.d.ts",
+      "../node_modules/class-validator/types/metadata/validationmetadata.d.ts",
+      "../node_modules/class-validator/types/metadata/validationmetadataargs.d.ts",
+      "../node_modules/class-validator/types/register-decorator.d.ts",
+      "../node_modules/class-validator/types/validation-schema/validationschema.d.ts",
+      "../node_modules/class-validator/types/validation/validationarguments.d.ts",
+      "../node_modules/class-validator/types/validation/validationerror.d.ts",
+      "../node_modules/class-validator/types/validation/validationtypes.d.ts",
+      "../node_modules/class-validator/types/validation/validator.d.ts",
+      "../node_modules/class-validator/types/validation/validatorconstraintinterface.d.ts",
+      "../node_modules/class-validator/types/validation/validatoroptions.d.ts",
       "../node_modules/jest-diff/build/cleanupsemantic.d.ts",
       "../node_modules/jest-diff/build/difflines.d.ts",
       "../node_modules/jest-diff/build/index.d.ts",
@@ -12506,13 +12616,24 @@
       "../node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "../node_modules/typescript/lib/lib.scripthost.d.ts",
       "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
-      "../src/app.service.ts",
+      "../src/app.controller.ts",
+      "../src/app.module.ts",
+      "../src/auth/auth.models.ts",
+      "../src/auth/auth.module.ts",
       "../src/auth/auth.service.ts",
       "../src/auth/constants.ts",
       "../src/auth/jwt-auth.guard.ts",
       "../src/auth/jwt.strategy.ts",
+      "../src/main.ts",
+      "../src/organisations/organisations.controller.ts",
+      "../src/organisations/organisations.models.ts",
+      "../src/organisations/organisations.module.ts",
+      "../src/organisations/organisations.service.ts",
       "../src/prisma/prisma.module.ts",
-      "../src/prisma/prisma.service.ts"
+      "../src/prisma/prisma.service.ts",
+      "../src/users/users.controller.ts",
+      "../src/users/users.module.ts",
+      "../src/users/users.service.ts"
     ]
   },
   "version": "3.9.5"
