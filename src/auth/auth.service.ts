@@ -3,6 +3,7 @@ import { JwtService } from '@nestjs/jwt';
 import { PrismaService } from 'src/prisma/prisma.service';
 import *  as bcrypt from 'bcrypt';
 import { User } from '@prisma/client';
+import { LoginDto } from './auth.models';
 
 const saltRounds = 10;
 
@@ -36,13 +37,13 @@ export class AuthService {
   /*
   * logins the user and returns a Bearer JWT to be used on the REST APIs
   */
-  async login(user: any) {
+  async login(user: LoginDto) {
     const existingUser = await this.validateUser(user.email,user.password);
     if(existingUser == null){
       return new HttpException({status: HttpStatus.UNAUTHORIZED, error: "Email/Password wrong"}, HttpStatus.UNAUTHORIZED)
     }
 
-    const payload = { username: existingUser.email, sub: user.id };
+    const payload = { username: existingUser.email, sub: existingUser.id };
     return {
       access_token: this.jwtService.sign(payload),
     };
