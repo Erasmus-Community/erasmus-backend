@@ -13,7 +13,7 @@ import { PrismaModule } from 'src/prisma/prisma.module';
     PassportModule.register({ defaultStrategy: 'jwt' }),
     JwtModule.register({
       secret: jwtConstants.secret,
-      signOptions: { expiresIn: '60s' },
+      signOptions: { expiresIn: '5min' },
     }),
     UsersModule,
     PrismaModule
