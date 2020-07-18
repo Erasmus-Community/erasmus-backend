@@ -28,6 +28,16 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Communication
+We are using the trello to control the features being developed. If you are working in any feature to complement the application use it to help us coordinate . Thanks! :thumbsup:
+
+[Trello](https://trello.com/erasmuscommunity/home)
+
+We use discord for the communication. Join us to be part of this awesome project.
+
+[Discord](https://discord.gg/eMTfRzh)
+
+
 ## Installation
 
 ```bash
@@ -60,6 +70,20 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Database 
+
+Type - PostgresSQL
+
+We use prisma to create the load the database to the project. There use the following commands to generate the schema.
+
+```
+npx prisma introspect
+```
+
+```
+npx prisma generate
+```
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
@@ -73,16 +97,6 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
   Nest is [MIT licensed](LICENSE).
-
-
-## Communication
-We are using the trello to control the features being developed. If you are working in any feature to complement the application use it to help us coordinate . Thanks! :thumbsup:
-
-[Trello](https://trello.com/erasmuscommunity/home)
-
-For communications at real time we use the discord. Feel free to join us at anytime.
-
-[Discord](https://discord.gg/VFS7WE)
 
 ## All the Contributors
 
