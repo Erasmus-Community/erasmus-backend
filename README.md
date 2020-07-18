@@ -101,11 +101,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
   Nest is [MIT licensed](LICENSE).
 
-## All the Contributors
-
-To be added
-
-## Contributors ✨
+## All the Contributors a huge thank you :heart: ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
