@@ -1432,8 +1432,8 @@
         "affectsGlobalScope": false
       },
       "../node_modules/.prisma/client/index.d.ts": {
-        "version": "61200178b461c6d8b6d3f49cf507e99586be211c697afa9c8f1302ddb86adbc7",
-        "signature": "61200178b461c6d8b6d3f49cf507e99586be211c697afa9c8f1302ddb86adbc7",
+        "version": "a953c21cf8e636974a270b28ca5b648bd695de265b887dfd5eadb90161848847",
+        "signature": "a953c21cf8e636974a270b28ca5b648bd695de265b887dfd5eadb90161848847",
         "affectsGlobalScope": false
       },
       "../node_modules/@prisma/client/index.d.ts": {
@@ -2067,7 +2067,7 @@
         "affectsGlobalScope": false
       },
       "../src/auth/auth.service.ts": {
-        "version": "d024440c2b2b035ad6a22cd87cba03887913cf38ecda462b6fafc8f3bd0751a4",
+        "version": "fa66fc0789b052c5731c062608fdb66570199d0783fc87ac5f4322f699691167",
         "signature": "bc1c86507e42274b576dbf3268bb119cce3d215c3e82c25ad9f6e4b88d497195",
         "affectsGlobalScope": false
       },
@@ -2217,8 +2217,8 @@
         "affectsGlobalScope": false
       },
       "../src/organisations/organisations.models.ts": {
-        "version": "2276250eb30709b274fdda4af1b47f23d5a062c38497e677e698babcc23163af",
-        "signature": "d0f44ca70dd14b4fbcfac305869a286597cd903ba8477943ca396ca773a76aaa",
+        "version": "be29f1429ee1cc75d3a4ac20959ca3cde465a6a4709c76f2794d1b6429874d68",
+        "signature": "a9d5b5eb4cb18c6b80373fdd7a2379c56013a9d040997f1d36d937cb9035fc75",
         "affectsGlobalScope": false
       },
       "../src/organisations/organisations.service.ts": {
@@ -12102,7 +12102,6 @@
       ]
     },
     "semanticDiagnosticsPerFile": [
-      "../node_modules/.prisma/client/index.d.ts",
       "../node_modules/@babel/parser/typings/babel-parser.d.ts",
       "../node_modules/@babel/types/lib/index.d.ts",
       "../node_modules/@nestjs/common/cache/cache.constants.d.ts",
@@ -12286,7 +12285,6 @@
       "../node_modules/@nestjs/passport/dist/passport/passport.serializer.d.ts",
       "../node_modules/@nestjs/passport/dist/passport/passport.strategy.d.ts",
       "../node_modules/@nestjs/passport/index.d.ts",
-      "../node_modules/@prisma/client/index.d.ts",
       "../node_modules/@prisma/client/runtime/dmmf-types.d.ts",
       "../node_modules/@prisma/client/runtime/index.d.ts",
       "../node_modules/@types/anymatch/index.d.ts",
@@ -12616,24 +12614,10 @@
       "../node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "../node_modules/typescript/lib/lib.scripthost.d.ts",
       "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
-      "../src/app.controller.ts",
-      "../src/app.module.ts",
       "../src/auth/auth.models.ts",
-      "../src/auth/auth.module.ts",
-      "../src/auth/auth.service.ts",
       "../src/auth/constants.ts",
       "../src/auth/jwt-auth.guard.ts",
-      "../src/auth/jwt.strategy.ts",
-      "../src/main.ts",
-      "../src/organisations/organisations.controller.ts",
-      "../src/organisations/organisations.models.ts",
-      "../src/organisations/organisations.module.ts",
-      "../src/organisations/organisations.service.ts",
-      "../src/prisma/prisma.module.ts",
-      "../src/prisma/prisma.service.ts",
-      "../src/users/users.controller.ts",
-      "../src/users/users.module.ts",
-      "../src/users/users.service.ts"
+      "../src/auth/jwt.strategy.ts"
     ]
   },
   "version": "3.9.5"
