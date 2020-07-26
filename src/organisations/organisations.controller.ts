@@ -3,7 +3,7 @@ import { Organisation } from '@prisma/client';
 import { OrganisationsService } from './organisations.service';
 import { OrganisationDto } from './organisations.models';
 
-@Controller('organisations')
+@Controller('api/organisations')
 export class OrganisationsController {
     constructor(private organisationsService: OrganisationsService){}
 

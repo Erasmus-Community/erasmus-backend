@@ -2227,7 +2227,7 @@
         "affectsGlobalScope": false
       },
       "../src/organisations/organisations.controller.ts": {
-        "version": "ecb7ab1ef7cb104976ed9117721159171bfd7b93f7a7b08ae662759a530dfd21",
+        "version": "1aab336a574d700b1ad8a8d376d6c68954ca774dcf726d33051e81ea1c20a383",
         "signature": "1890f145945679e9e5b2e0bffcdbe0fb18095d0fbb07d738e5c5e9a6b7e8b836",
         "affectsGlobalScope": false
       },
@@ -2427,7 +2427,7 @@
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
-        "version": "3bf2fec680a3f6c9c048a45d3bca916bc4cb3b13963aa85a081218edef407df5",
+        "version": "d70ef3dcdd5d5bc690c11359ec5308c8a248ae1c5ea509b88e565e3d3169bc8f",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -12102,6 +12102,7 @@
       ]
     },
     "semanticDiagnosticsPerFile": [
+      "../node_modules/.prisma/client/index.d.ts",
       "../node_modules/@babel/parser/typings/babel-parser.d.ts",
       "../node_modules/@babel/types/lib/index.d.ts",
       "../node_modules/@nestjs/common/cache/cache.constants.d.ts",
@@ -12285,6 +12286,7 @@
       "../node_modules/@nestjs/passport/dist/passport/passport.serializer.d.ts",
       "../node_modules/@nestjs/passport/dist/passport/passport.strategy.d.ts",
       "../node_modules/@nestjs/passport/index.d.ts",
+      "../node_modules/@prisma/client/index.d.ts",
       "../node_modules/@prisma/client/runtime/dmmf-types.d.ts",
       "../node_modules/@prisma/client/runtime/index.d.ts",
       "../node_modules/@types/anymatch/index.d.ts",
@@ -12614,10 +12616,24 @@
       "../node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "../node_modules/typescript/lib/lib.scripthost.d.ts",
       "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
+      "../src/app.controller.ts",
+      "../src/app.module.ts",
       "../src/auth/auth.models.ts",
+      "../src/auth/auth.module.ts",
+      "../src/auth/auth.service.ts",
       "../src/auth/constants.ts",
       "../src/auth/jwt-auth.guard.ts",
-      "../src/auth/jwt.strategy.ts"
+      "../src/auth/jwt.strategy.ts",
+      "../src/main.ts",
+      "../src/organisations/organisations.controller.ts",
+      "../src/organisations/organisations.models.ts",
+      "../src/organisations/organisations.module.ts",
+      "../src/organisations/organisations.service.ts",
+      "../src/prisma/prisma.module.ts",
+      "../src/prisma/prisma.service.ts",
+      "../src/users/users.controller.ts",
+      "../src/users/users.module.ts",
+      "../src/users/users.service.ts"
     ]
   },
   "version": "3.9.5"
