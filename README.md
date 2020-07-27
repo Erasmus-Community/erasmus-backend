@@ -78,7 +78,11 @@ $ npm run test:cov
 
 Type - PostgresSQL
 
-We use prisma to create the load the database to the project. There use the following commands to generate the schema.
+There is a config folder with the schema of the database that is the current version of the database. 
+It is in PostgresSQL. In the case of making changes on the database for other features send a MR with the new configuration so we can swap it after approval.
+
+
+We use prisma to create the load the database to the project. It uses a simple logic that can easily be learned. There use the following commands to generate the schema. For more information on prisma take a look [here](https://www.prisma.io/)
 
 ```
 npx prisma introspect

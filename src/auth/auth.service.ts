@@ -53,7 +53,7 @@ export class AuthService {
   * Encrypties the password to a hash to be stored in the DB
   */
   async encryptPwd(data: string): Promise<string>{
-    return await bcrypt.hash(data,saltRounds);
+    return await bcrypt.hash(data,saltRounds)
   }
   
   /*

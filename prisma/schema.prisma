@@ -12,11 +12,14 @@ model Organisation {
   description String?
   id          Int     @default(autoincrement()) @id
   name        String?
+  owner       Int?
+  User        User?   @relation(fields: [owner], references: [id])
 }
 
 model User {
-  email    String  @unique
-  id       Int     @default(autoincrement()) @id
-  name     String?
-  password String
+  email        String         @unique
+  id           Int            @default(autoincrement()) @id
+  name         String?
+  password     String
+  Organisation Organisation[]
 }
