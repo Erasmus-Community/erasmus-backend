@@ -11,5 +11,13 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "incremental": true
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist",
+    "config",
+    "webpack",
+    "jest"
+  ]
 }

@@ -8,7 +8,7 @@ implements OnModuleInit, OnModuleDestroy{
         super();
     }
     
-    async onModuleInit(){ await this.connect(); }
+    async onModuleInit(): Promise<void> { await this.$connect(); }
 
-    async onModuleDestroy(){ await this.disconnect(); }
+    async onModuleDestroy(): Promise<void> { await this.$disconnect(); }
 }

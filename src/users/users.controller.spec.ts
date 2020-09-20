@@ -1,4 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
+import { PrismaService } from 'src/prisma/prisma.service';
 import { UsersController } from './users.controller';
 
 describe('Users Controller', () => {
@@ -7,6 +8,7 @@ describe('Users Controller', () => {
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
       controllers: [UsersController],
+      imports: [PrismaService]
     }).compile();
 
     controller = module.get<UsersController>(UsersController);
@@ -15,4 +17,6 @@ describe('Users Controller', () => {
   it('should be defined', () => {
     expect(controller).toBeDefined();
   });
+  
+  
 });
