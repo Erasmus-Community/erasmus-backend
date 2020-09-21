@@ -12,6 +12,7 @@ describe('Organisations Controller', () => {
       imports: [PrismaModule],
       providers: [OrganisationsService],
       exports: [OrganisationsService],
+      controllers: [OrganisationsController]
     }).compile();
 
     controller = module.get<OrganisationsController>(OrganisationsController);
@@ -27,7 +28,7 @@ describe('Organisations Controller', () => {
     it('should return an array of organisations', async () => {
       jest.spyOn(service, 'findAllOrgs').mockImplementation(async () => []);
 
-      expect(await controller.getOrgs()).toBe([]);
+      expect(await controller.getOrgs()).toStrictEqual([]);
     });
   });
 });
