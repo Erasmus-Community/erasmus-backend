@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
-import { Organisation } from '@prisma/client';
 import { OrganisationDto } from './organisations.models';
 
 @Injectable()
@@ -58,7 +57,7 @@ export class OrganisationsService {
     * @returns json with error false and message
     */
     async deleteOrganisationById(id: number): Promise<any>{
-        let org: Organisation = await this.prismaService.organisation.delete({
+        const org = await this.prismaService.organisation.delete({
             where: {
                 id: id
             }

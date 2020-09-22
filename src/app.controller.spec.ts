@@ -1,5 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { AppController } from './app.controller';
+import { LoginDto } from './auth/auth.models';
 import { AuthService } from './auth/auth.service';
 import { UsersService } from './users/users.service';
 
