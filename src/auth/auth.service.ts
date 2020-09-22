@@ -37,7 +37,7 @@ export class AuthService {
   /*
   * logins the user and returns a Bearer JWT to be used on the REST APIs
   */
-  async login(user: LoginDto) {
+  async login(user: LoginDto): Promise<any> {
     const existingUser = await this.validateUser(user.email,user.password);
     if(existingUser == null){
       return new HttpException({status: HttpStatus.UNAUTHORIZED, error: "Email/Password wrong"}, HttpStatus.UNAUTHORIZED)

@@ -9,19 +9,19 @@ export class AppController {
   constructor(private authService: AuthService, private usersService: UsersService) {}
 
   @Post('auth/login')
-  async login(@Body() loginDto: LoginDto) {
+  async login(@Body() loginDto: LoginDto): Promise<any> {
     return this.authService.login(loginDto);
   }
 
   @Post('auth/create')
-  async create(@Body() loginDto : LoginDto) {
+  async create(@Body() loginDto : LoginDto): Promise<any> {
     const hash =  await this.authService.encryptPwd(loginDto.password);
     return this.usersService.createUser(loginDto.email,hash);
   }
 
   @UseGuards(JwtAuthGuard)
   @Get('profile')
-  getProfile(@Request() req) {
+  getProfile(@Request() req : any): any {
     return req.user;
   }
 }
