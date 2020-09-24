@@ -62,7 +62,7 @@ export class OrganisationsService {
                 id: id
             }
         })
-        if(org) { return {error: false, message: "OK" } }
-        else{ return {error: true, message: "No organisation was found" } }
+        if(org) { return { error: false, message: "OK" } }
+        else{ return { error: true, message: "No organisation was found" } }
     }
 }
