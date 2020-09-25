@@ -10,6 +10,7 @@ import { OrganisationDto } from './organisations.models';
 describe('Organisations Controller', () => {
   let controller: OrganisationsController;
   let service: OrganisationsService;
+  const orgInfo = {country: "PT", description: "Test Organisation", name: "Name Organisation", owner: null} as OrganisationDto;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
@@ -23,14 +24,9 @@ describe('Organisations Controller', () => {
     service = module.get<OrganisationsService>(OrganisationsService);
 
     // mocking services
-    jest.fn();
     jest.spyOn(service, 'findAllOrgs').mockImplementation(async () => []);
-    jest.spyOn(service, 'findOrgById').mockImplementation(async () => { return {
-      country: "PT", description: "Test Organisation", name: "Name Organisation", owner: null, id: 1
-    } as OrganisationDto});
-    jest.spyOn(service, 'createOrg').mockImplementation(async () => { return {} as OrganisationDto });
-    jest.spyOn(service, 'updateOrganisationById').mockImplementation(async () => { return {} as OrganisationDto});
-  });
+    jest.spyOn(service, 'findOrgById').mockImplementation(async () => orgInfo);
+    });
 
   it('should be defined', () => {
     expect(controller).toBeDefined();
@@ -44,30 +40,34 @@ describe('Organisations Controller', () => {
   });
 
   describe('create an organisation', () => {
+    beforeEach(async () => {
+      jest.spyOn(service, 'createOrg').mockImplementation(async () => { return orgInfo });
+    })
     it('should return an array with a single organisation', async () => {
-      const orgInfo = {country: "PT", description: "Test Organisation", name: "Name Organisation", owner: null} as OrganisationDto;
-      expect(await controller.create(orgInfo)).toContain({country: "PT", description: "Test Organisation", name: "Name Organisation", owner: null} as OrganisationDto)
+      expect(await controller.create(orgInfo)).toBe(orgInfo)
     })
   });
 
   describe('finding and organisation', () => {
     it('should have found a organisation', async () => {
-      expect(await controller.findOrgById(1)).toBe({
-        country: "PT", description: "Test Organisation", name: "Name Organisation", owner: null, id: 1
-      })
+      expect(await controller.findOrgById(1)).toBe(orgInfo);
     });
   });
 
   describe('update an organisation', () => {
+    const infoBeforeUpdate = { country: "PT", description: "Test Description", name: "Name of Org", owner: null, id: 1} as OrganisationDto;
     let infoToUpdate;
     beforeEach(async () => {
       infoToUpdate = { description: 'Updated Description'};
+      jest.spyOn(service, 'updateOrganisationById').mockImplementation(async () => { return {
+        ...infoBeforeUpdate,
+        description: infoToUpdate.description
+      }});
+  
     });
 
     it('should update a property of the desired organisation', async () => {
-      expect(await controller.update(1,infoToUpdate)).toBe({
-        country: "PT", description: "Updated Description", name: "Name Organisation", owner: null, id: 1
-      })
+      expect(await controller.update(1,infoToUpdate)).toHaveProperty('description', "Updated Description")
     });
   });
 
