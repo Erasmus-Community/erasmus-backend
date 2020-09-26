@@ -13,6 +13,7 @@ export class UsersController {
     return this.userService.getUser(id);
   }
 
+  // TODO:
   @UseGuards(JwtAuthGuard)
   @Put(':id')
   async updateUser(): Promise<User>{

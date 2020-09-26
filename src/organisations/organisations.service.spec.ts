@@ -1,5 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { PrismaService } from 'src/prisma/prisma.service';
+import { OrganisationDto } from './organisations.models';
 import { OrganisationsService } from './organisations.service';
 
 /*

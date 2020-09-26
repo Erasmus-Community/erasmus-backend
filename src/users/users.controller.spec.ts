@@ -19,5 +19,21 @@ describe('Users Controller', () => {
     expect(controller).toBeDefined();
   });
   
-  
+  describe('#getUser', () =>{
+    it('', async () =>{
+      expect(await controller.getUser(1)).toBeTruthy
+    });
+  });
+
+  describe('#updateUser', () => {
+    it('', async () =>{
+      expect(await controller.updateUser()).toBeTruthy
+    });
+  });
+
+  describe('#deleteUSER', () => {
+    it('', async () =>{
+      expect(await controller.deleteUser(1)).toBeTruthy
+    });
+  });
 });
