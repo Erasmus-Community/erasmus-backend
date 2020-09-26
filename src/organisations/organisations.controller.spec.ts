@@ -22,18 +22,20 @@ describe('Organisations Controller', () => {
 
     controller = module.get<OrganisationsController>(OrganisationsController);
     service = module.get<OrganisationsService>(OrganisationsService);
-
-    // mocking services
-    jest.spyOn(service, 'findAllOrgs').mockImplementation(async () => []);
-    jest.spyOn(service, 'findOrgById').mockImplementation(async () => orgInfo);
     });
 
   it('should be defined', () => {
     expect(controller).toBeDefined();
+    expect(service).toBeDefined();
   });
 
+  /* Normal Methods */
 
   describe('find organisations', () => {
+    beforeEach(async () => {
+      jest.spyOn(service, 'findAllOrgs').mockImplementationOnce(async () => []);
+    })
+
     it('should return an array of organisations', async () => {    
       expect(await controller.getOrgs()).toStrictEqual([]);
     });
@@ -41,7 +43,7 @@ describe('Organisations Controller', () => {
 
   describe('create an organisation', () => {
     beforeEach(async () => {
-      jest.spyOn(service, 'createOrg').mockImplementation(async () => { return orgInfo });
+      jest.spyOn(service, 'createOrg').mockImplementationOnce(async () => { return orgInfo });
     })
     it('should return an array with a single organisation', async () => {
       expect(await controller.create(orgInfo)).toBe(orgInfo)
@@ -49,6 +51,10 @@ describe('Organisations Controller', () => {
   });
 
   describe('finding and organisation', () => {
+    beforeEach(async () => {
+      jest.spyOn(service, 'findOrgById').mockImplementationOnce(async () => orgInfo);
+    })
+
     it('should have found a organisation', async () => {
       expect(await controller.findOrgById(1)).toBe(orgInfo);
     });
@@ -57,9 +63,10 @@ describe('Organisations Controller', () => {
   describe('update an organisation', () => {
     const infoBeforeUpdate = { country: "PT", description: "Test Description", name: "Name of Org", owner: null, id: 1} as OrganisationDto;
     let infoToUpdate;
+
     beforeEach(async () => {
       infoToUpdate = { description: 'Updated Description'};
-      jest.spyOn(service, 'updateOrganisationById').mockImplementation(async () => { return {
+      jest.spyOn(service, 'updateOrganisationById').mockImplementationOnce(async () => { return {
         ...infoBeforeUpdate,
         description: infoToUpdate.description
       }});
@@ -73,7 +80,7 @@ describe('Organisations Controller', () => {
 
   describe('delete an organisation', () => {
     beforeEach(async () => {
-      jest.spyOn(service, 'deleteOrganisationById').mockImplementation(async () => { 
+      jest.spyOn(service, 'deleteOrganisationById').mockImplementationOnce(async () => { 
         return { error: false, message: "OK" }
       });
     });
@@ -82,5 +89,81 @@ describe('Organisations Controller', () => {
       expect(await controller.delete(1)).toHaveProperty('message','OK');
     });
   });
-});
 
+  /*
+  * Errors mocks
+  */
+
+  describe('returns errrors', () => {
+    describe('#CreateOrg', () => {
+      beforeEach(async () => {
+        jest.spyOn(service, 'createOrg').mockRejectedValue(new Error('error on database'));
+      });
+  
+      it('should return an error', async () => {
+        try{
+          await controller.create(orgInfo)
+        }catch(e) {
+          expect(e).toHaveProperty('error', true);
+        }
+      });
+    });
+
+    describe('#findAllOrgs', () => {
+      beforeEach(async () => {
+        jest.spyOn(service, 'findAllOrgs').mockImplementationOnce(async () => Promise.reject('error on database'));
+      });
+
+      it('should return an error', async () => {
+        try{
+          await controller.getOrgs();
+        } catch(e) {
+          expect(e).toHaveProperty('error', true);
+        }
+      });
+    });
+      
+    describe("#findOrgById", () => {
+      beforeEach(async () => {
+        jest.spyOn(service, 'findOrgById').mockImplementationOnce(async () => Promise.reject('error on database'));
+      });
+
+      it('should return an error', async () => {
+        try{
+          await controller.findOrgById(1);
+        } catch(e) {
+          expect(e).toHaveProperty('error', true);
+        }
+      });
+    });
+
+    describe("#update", () => {
+      beforeEach(async () => {
+        jest.spyOn(service, 'updateOrganisationById').mockImplementationOnce(async () => Promise.reject('error on database'));
+      });
+
+      it('should return an error', async () => {
+        try{
+          await controller.update(1, orgInfo);
+        } catch(e) {
+          expect(e).toHaveProperty('error', true);
+        }
+      }); 
+    });
+
+    describe("#deleteId", () => {
+      beforeEach(async () => {
+        jest.spyOn(service, 'deleteOrganisationById').mockImplementationOnce(async () => Promise.reject('error on database'));
+      })
+
+      it('should return an error', async () => {
+        try{
+          await controller.delete(1);
+        } catch(e) {
+          expect(e).toHaveProperty('error', true);
+        }
+      });
+    });
+  });
+  /* End of errors mocks */
+});

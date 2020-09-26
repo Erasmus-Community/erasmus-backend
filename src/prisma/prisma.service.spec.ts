@@ -15,4 +15,12 @@ describe('PrismaService', () => {
   it('should be defined', () => {
     expect(service).toBeDefined();
   });
+
+  it('#init', async () => {
+    expect(await service.onModuleInit()).toBeTruthy
+  });
+
+  it('#destory', async () => {
+    expect(await service.onModuleDestroy()).toBeTruthy
+  })
 });
