@@ -1437,7 +1437,7 @@
         "affectsGlobalScope": false
       },
       "../src/prisma/prisma.service.ts": {
-        "version": "d5e24bdad81bc22ddc5c8e6d0b1688095a4e63f3e0b516a9ed8c89cd61bd3dd1",
+        "version": "3a6e9d58978b7dd448cdf85fc257e7b76bfced4724878fafd15c278d812ecc14",
         "signature": "a1cbf9ae2f534dd5e161891e78b972f034b390ab866203f3d8bf1715561b2640",
         "affectsGlobalScope": false
       },
@@ -2062,8 +2062,8 @@
         "affectsGlobalScope": false
       },
       "../src/auth/auth.service.ts": {
-        "version": "fa66fc0789b052c5731c062608fdb66570199d0783fc87ac5f4322f699691167",
-        "signature": "bc1c86507e42274b576dbf3268bb119cce3d215c3e82c25ad9f6e4b88d497195",
+        "version": "c556c1c15ef384bf03cbc07a5f4a6d7ea611dea1689b7fc05ce87cccc98f4ed9",
+        "signature": "3f86a53230fee0f9fab6bdc2c17984797cf062748cebc5aeac7b8a1bf5ceaf82",
         "affectsGlobalScope": false
       },
       "../node_modules/@nestjs/passport/dist/abstract.strategy.d.ts": {
@@ -2167,13 +2167,13 @@
         "affectsGlobalScope": false
       },
       "../src/users/users.service.ts": {
-        "version": "c3ba47be951f15afcaf8f372c87358be39ad344a44e289a6db242861141558ee",
+        "version": "15584ddc56cade9842252ba7180673a84245e0957a6b1cd3a838f4c71a5144d6",
         "signature": "e38d86dd2d64b8b70df2d01dcc2414d9baca852b036721be8973e2d7bc6c7c61",
         "affectsGlobalScope": false
       },
       "../src/app.controller.ts": {
-        "version": "af4e39f6e1841987342a78bf06a245035711d6ab1e353cbd4368590ab4baa357",
-        "signature": "15d8a46953f04aa862f5b77fe019dbd352d3de366b4ff0a43666c84ddfe304d8",
+        "version": "6494175d04f61816d58de9f482c5e9829e2c510887c835d60177b28d20c52d53",
+        "signature": "1aa79464cb09360cfba2a79c977430a246265e1a1155edd2577257c92d7e7d15",
         "affectsGlobalScope": false
       },
       "../src/prisma/prisma.module.ts": {
@@ -2207,8 +2207,8 @@
         "affectsGlobalScope": false
       },
       "../src/auth/jwt.strategy.ts": {
-        "version": "7b08542b86453f402c61681b627ad6b03e8ab458e4a6511fe365eb5be275658a",
-        "signature": "e3e047e8cb263193af5ebae4c6030f0ddb84e6b3c6f8c8be3413ceae2c89969a",
+        "version": "e46736971d44b5d9f409c856f981524f6c5dd4c607466dd35f96948a94dea0c1",
+        "signature": "b5635a627634081d9874b69b06875c86ad289ad7d34e832f515bf107c6f2b581",
         "affectsGlobalScope": false
       },
       "../src/auth/auth.module.ts": {
@@ -2222,23 +2222,18 @@
         "affectsGlobalScope": false
       },
       "../src/organisations/organisations.service.ts": {
-        "version": "afe37812f3fd96f13f069ae5ef6a4cf7600f0d036bc9a4f665a8efb5c590aaae",
+        "version": "3ecadf1714ff9b6f8694efe45613b56f2f6081dfcf23923efbc02a15a8c9eb2c",
         "signature": "ab4e6669b5f407b24f90149faa66411ab01cbdec7a91ccab844fc9d69c510f8c",
         "affectsGlobalScope": false
       },
       "../src/organisations/organisations.controller.ts": {
-        "version": "64f80e63d65b7e07987c9b4f4be8e822c4fe0e8e2c9c70d9e423ed65437e503c",
-        "signature": "6de8aa93056f8f3cd3d2f6d2e76c6caae01d6b4817133246869e3ed0f5f3379c",
-        "affectsGlobalScope": false
-      },
-      "../src/users/users.models.ts": {
-        "version": "5f97ace104893f7e323203d82d7ada25b294edf8f5ae16022c5ed61948b6efb5",
-        "signature": "cdf066d438a6faa03d90b1ce4afde78bad68d5763f4deb73d8a80f2db33f08e2",
+        "version": "d46309d5584c9e2488d8716d6d13d313212e960c2181e302e8885ee0e0f16b82",
+        "signature": "278930a4edb368248dd1c5e27fcbe91698949961144a51582125b2eac221abf6",
         "affectsGlobalScope": false
       },
       "../src/users/users.controller.ts": {
-        "version": "8b1108750079301d65539f3e27116eaad269bc7e0ccbbe2f5ee57f410cd3c13a",
-        "signature": "66d7930a7192e20beff161a783d50b193ef6b96cf5094868e2a62b4274ae7a8e",
+        "version": "9067376dfb66ea0104d27d3264f31c86115be4816d6a0e93d6dc9743f0e66f6c",
+        "signature": "5581306cd0a2e75f814f141b66edcf4599b82420ce2a197bf1b2841dec7bfa87",
         "affectsGlobalScope": false
       },
       "../src/organisations/organisations.module.ts": {
@@ -2434,6 +2429,11 @@
       "../src/main.ts": {
         "version": "d70ef3dcdd5d5bc690c11359ec5308c8a248ae1c5ea509b88e565e3d3169bc8f",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "../src/users/users.models.ts": {
+        "version": "5f97ace104893f7e323203d82d7ada25b294edf8f5ae16022c5ed61948b6efb5",
+        "signature": "cdf066d438a6faa03d90b1ce4afde78bad68d5763f4deb73d8a80f2db33f08e2",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/anymatch/index.d.ts": {
@@ -4505,6 +4505,7 @@
       ],
       "../src/organisations/organisations.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../src/auth/jwt-auth.guard.ts",
         "../src/organisations/organisations.models.ts",
         "../src/organisations/organisations.service.ts"
       ],
@@ -4515,7 +4516,6 @@
       ],
       "../src/organisations/organisations.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@prisma/client/index.d.ts",
         "../src/organisations/organisations.models.ts",
         "../src/prisma/prisma.service.ts"
       ],
@@ -4531,7 +4531,6 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@prisma/client/index.d.ts",
         "../src/auth/jwt-auth.guard.ts",
-        "../src/users/users.models.ts",
         "../src/users/users.service.ts"
       ],
       "../src/users/users.module.ts": [
@@ -6311,14 +6310,11 @@
         "../node_modules/rxjs/internal/types.d.ts"
       ],
       "../src/app.controller.ts": [
-        "../node_modules/.prisma/client/index.d.ts",
-        "../node_modules/@nestjs/common/index.d.ts",
         "../src/auth/auth.models.ts",
         "../src/auth/auth.service.ts",
         "../src/users/users.service.ts"
       ],
       "../src/auth/auth.service.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/jwt/index.d.ts",
         "../node_modules/@prisma/client/index.d.ts",
         "../src/auth/auth.models.ts",
