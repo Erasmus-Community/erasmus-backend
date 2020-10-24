@@ -19,8 +19,12 @@ describe('PrismaService', () => {
   it('#init', async () => {
     expect(await service.onModuleInit()).toBeTruthy
   });
+  
+  it('#makeQuery', async () => {
+    expect(await service.makeQuery('SELECT * FROM "User"')).toBeTruthy
+  })
 
-  it('#destory', async () => {
+  it('#destroy', async () => {
     expect(await service.onModuleDestroy()).toBeTruthy
   })
 });

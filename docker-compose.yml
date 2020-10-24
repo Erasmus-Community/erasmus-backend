@@ -1,7 +1,7 @@
 version: '3'
 services:
   database: # postgres
-    image: postgres # use latest official postgres version
+    image: postgres:latest # use latest official postgres version
     restart: always
     container_name: test_erasmus
     ports:
@@ -10,9 +10,9 @@ services:
       - DATABASE_HOST=127.0.0.1
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=erasmus_test
+      - POSTGRES_DB=erasmus-test
     volumes:
-      - ./config/schema.sql:/docker-entrypoint initdb.d/initdb.sql
+      - ./config/schema.sql:/docker-entrypoint-initdb.d/init.sql
   pgadmin-compose: #pgadmin-compose
     image: dpage/pgadmin4
     container_name: test_admin

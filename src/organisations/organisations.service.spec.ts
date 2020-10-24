@@ -5,12 +5,12 @@ import { OrganisationsService } from './organisations.service';
 
 /*
 * Making tests directly to a test database
-* TODO: add the test database to make proper tests
 */
 
 
 describe('OrganisationsService', () => {
   let service: OrganisationsService;
+  let prisma: PrismaService;
   const orgInfo = {country: "PT", description: "Test Organisation", name: "Name Organisation", owner: null} as OrganisationDto;
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
@@ -18,6 +18,11 @@ describe('OrganisationsService', () => {
     }).compile();
 
     service = module.get<OrganisationsService>(OrganisationsService);
+    prisma = module.get<PrismaService>(PrismaService);
+  });
+
+  afterAll(async () => {
+    await prisma.$disconnect();
   });
 
   it('should be defined', () => {
@@ -54,15 +59,13 @@ describe('OrganisationsService', () => {
   });
 
   describe('deleteOrganisationById', () => {
+    let org: OrganisationDto;
+    beforeEach(async () => {
+      org = await service.createOrg(orgInfo);
+    });
+    
     it('should delete a organisation', async () => {
-      expect(await service.deleteOrganisationById(1));
+      expect(await service.deleteOrganisationById(org.id)).toHaveProperty("error",false);
     });
   });
-
-
-  describe('deleteOrganisationById with a ', () => {
-    it('should delete a organisation', async () => {
-      expect(await service.deleteOrganisationById(1))
-    });
-  })
 });

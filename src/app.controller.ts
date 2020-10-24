@@ -1,6 +1,5 @@
 import { Controller, Get, UseGuards, Post, Request, Body } from '@nestjs/common';
 import { AuthService} from './auth/auth.service';
-import { JwtAuthGuard } from './auth/jwt-auth.guard';
 import { UsersService } from './users/users.service';
 import { LoginDto } from './auth/auth.models';
 
@@ -17,11 +16,5 @@ export class AppController {
   async create(@Body() loginDto : LoginDto): Promise<any> {
     const hash =  await this.authService.encryptPwd(loginDto.password);
     return this.usersService.createUser(loginDto.email,hash);
-  }
-
-  @UseGuards(JwtAuthGuard)
-  @Get('profile')
-  getProfile(@Request() req : any): any {
-    return req.user;
   }
 }

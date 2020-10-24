@@ -57,12 +57,15 @@ export class OrganisationsService {
     * @returns json with error false and message
     */
     async deleteOrganisationById(id: number): Promise<any>{
-        const org = await this.prismaService.organisation.delete({
-            where: {
-                id: id
-            }
-        })
-        if(org) { return { error: false, message: "OK" } }
-        else{ return { error: true, message: "No organisation was found" } }
+        try{
+            const org = await this.prismaService.organisation.delete({
+                where: {
+                    id: id
+                }
+            })
+            if(org) { return { error: false, message: "OK" } }
+        } catch {
+            return { error: true, message: "No organisation was found" } 
+        }
     }
 }

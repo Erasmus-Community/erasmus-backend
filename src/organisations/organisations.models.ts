@@ -3,4 +3,5 @@ export interface OrganisationDto {
     name: string;
     country: string;
     owner: number;
+    id: number;
 }

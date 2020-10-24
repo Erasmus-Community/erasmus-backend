@@ -5,6 +5,7 @@ import { UsersService } from './users.service';
 
 describe('Users Controller', () => {
   let controller: UsersController;
+  let prisma: PrismaService;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
@@ -13,6 +14,11 @@ describe('Users Controller', () => {
     }).compile();
 
     controller = module.get<UsersController>(UsersController);
+    prisma = module.get<PrismaService>(PrismaService)
+  });
+
+  afterAll(async () => {
+    await prisma.$disconnect();
   });
 
   it('should be defined', () => {
