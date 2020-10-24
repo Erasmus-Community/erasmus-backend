@@ -12,7 +12,8 @@ describe('OrganisationsService', () => {
   let service: OrganisationsService;
   let prisma: PrismaService;
   const orgInfo = {country: "PT", description: "Test Organisation", name: "Name Organisation", owner: null} as OrganisationDto;
-  beforeEach(async () => {
+
+  beforeAll(async () => {
     const module: TestingModule = await Test.createTestingModule({
       providers: [OrganisationsService, PrismaService],
     }).compile();
@@ -48,13 +49,14 @@ describe('OrganisationsService', () => {
   });
 
   describe('updateOrganisationById', () => {
-    let infoToUpdate;
-    beforeEach(() =>{
-       infoToUpdate = { description: 'Updated Description'};
+    const infoToUpdate = { ...orgInfo, description: 'Updated Description'} ;
+    let org;
+    beforeEach(async () =>{
+      org = await service.createOrg(orgInfo);
     });
 
     it('should update a organisation to the Updated Info', async () => {
-      expect(await service.updateOrganisationById(1,infoToUpdate))
+      expect(await service.updateOrganisationById(org.id,infoToUpdate)).toHaveProperty("description", "Updated Description");
     });
   });
 

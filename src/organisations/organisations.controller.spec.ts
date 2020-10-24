@@ -12,7 +12,7 @@ describe('Organisations Controller', () => {
   let service: OrganisationsService;
   const orgInfo = {country: "PT", description: "Test Organisation", name: "Name Organisation", owner: null} as OrganisationDto;
 
-  beforeEach(async () => {
+  beforeAll(async () => {
     const module: TestingModule = await Test.createTestingModule({
       imports: [PrismaModule],
       providers: [OrganisationsService],
@@ -69,8 +69,7 @@ describe('Organisations Controller', () => {
       jest.spyOn(service, 'updateOrganisationById').mockImplementationOnce(async () => { return {
         ...infoBeforeUpdate,
         description: infoToUpdate.description
-      }});
-  
+      }}); 
     });
 
     it('should update a property of the desired organisation', async () => {
