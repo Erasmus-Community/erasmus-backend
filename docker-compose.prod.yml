@@ -1,1 +1,25 @@
-# TODO
+version: '3'
+services:
+  database: # postgres
+    image: postgres:latest # use latest official postgres version
+    restart: always
+    container_name: prod_erasmus
+    ports:
+      - 5432:5432
+    environment:
+      - DATABASE_HOST=127.0.0.1
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=erasmus-test
+    volumes:
+      - ./config/schema.sql:/docker-entrypoint-initdb.d/init.sql
+  pgadmin-compose: #pgadmin-compose
+    image: dpage/pgadmin4
+    container_name: test_admin
+    environment: 
+        PGADMIN_DEFAULT_EMAIL: "test@gmail.com"
+        PGADMIN_DEFAULT_PASSWORD: "test123!"
+    ports: 
+        - "16543:80"
+    depends_on: 
+        - database 
