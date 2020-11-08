@@ -1,9 +1,11 @@
+# TODO: change this
+
 version: '3'
 services:
   database: # postgres
     image: postgres:latest # use latest official postgres version
     restart: always
-    container_name: test_erasmus
+    container_name: prod_erasmus
     ports:
       - 5432:5432
     environment:

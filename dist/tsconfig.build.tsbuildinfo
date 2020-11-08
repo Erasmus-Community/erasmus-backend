@@ -1437,8 +1437,8 @@
         "affectsGlobalScope": false
       },
       "../src/prisma/prisma.service.ts": {
-        "version": "3a6e9d58978b7dd448cdf85fc257e7b76bfced4724878fafd15c278d812ecc14",
-        "signature": "a1cbf9ae2f534dd5e161891e78b972f034b390ab866203f3d8bf1715561b2640",
+        "version": "138b9c98d4c7bbb842060a38680c92d1064bcec6647bdd830dfc820a451bd057",
+        "signature": "c8774a05d419e276bae0afa521214f164a0088f496f6e3fe5e9a48a93d94e811",
         "affectsGlobalScope": false
       },
       "../node_modules/class-validator/types/validation/validationerror.d.ts": {
@@ -2062,8 +2062,33 @@
         "affectsGlobalScope": false
       },
       "../src/auth/auth.service.ts": {
-        "version": "c556c1c15ef384bf03cbc07a5f4a6d7ea611dea1689b7fc05ce87cccc98f4ed9",
+        "version": "0044e845cd92c953d6c2ce512e9c58194c30f02c8b8431209244395846b9b759",
         "signature": "3f86a53230fee0f9fab6bdc2c17984797cf062748cebc5aeac7b8a1bf5ceaf82",
+        "affectsGlobalScope": false
+      },
+      "../src/users/users.models.ts": {
+        "version": "5f97ace104893f7e323203d82d7ada25b294edf8f5ae16022c5ed61948b6efb5",
+        "signature": "cdf066d438a6faa03d90b1ce4afde78bad68d5763f4deb73d8a80f2db33f08e2",
+        "affectsGlobalScope": false
+      },
+      "../src/users/users.service.ts": {
+        "version": "b6a4717d6379402d99e9e98485797787e16f4fff9aea5d5cb7be0f974b62c038",
+        "signature": "4c5c784b93856b922cd4f8a6dac42762f2f33da30d028d94e39f8d81973072f6",
+        "affectsGlobalScope": false
+      },
+      "../src/app.controller.ts": {
+        "version": "8a149b41cbcfc885cb53c1c4475a014d94abd8cad8050435109c708e981dfcc5",
+        "signature": "60b91309c80f0b463ce6dc9ae98fe00af4004710106e10170eb89136fcdc68eb",
+        "affectsGlobalScope": false
+      },
+      "../src/prisma/prisma.module.ts": {
+        "version": "54f3c1c7de599ccc487b3d6f68c6234457e278d649de5e8795ed9f10dced271c",
+        "signature": "bbc394ad2a2ec9c5dbcd9f60d4b365bf809989c90dd3c202b20fddc20e699bdf",
+        "affectsGlobalScope": false
+      },
+      "../src/users/users.module.ts": {
+        "version": "9500aa96b1b83bffcaccf71e66b45032192e20f58c8ce2d674d32c77a90d01dc",
+        "signature": "aa1725e38b5a0b4009f6a74f296f173e7926c119a60454dbd2e523861735df69",
         "affectsGlobalScope": false
       },
       "../node_modules/@nestjs/passport/dist/abstract.strategy.d.ts": {
@@ -2161,31 +2186,6 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
         "affectsGlobalScope": false
       },
-      "../src/auth/jwt-auth.guard.ts": {
-        "version": "51fc903ffa25cb72c7ecc1aa1fed8c9d5bf7c6dd2f7f0efe9d5fa1d7490b020c",
-        "signature": "e9629b89f6cd33a040577695d89edf882e66287d30c87121f5fc07f404decd25",
-        "affectsGlobalScope": false
-      },
-      "../src/users/users.service.ts": {
-        "version": "15584ddc56cade9842252ba7180673a84245e0957a6b1cd3a838f4c71a5144d6",
-        "signature": "e38d86dd2d64b8b70df2d01dcc2414d9baca852b036721be8973e2d7bc6c7c61",
-        "affectsGlobalScope": false
-      },
-      "../src/app.controller.ts": {
-        "version": "6494175d04f61816d58de9f482c5e9829e2c510887c835d60177b28d20c52d53",
-        "signature": "1aa79464cb09360cfba2a79c977430a246265e1a1155edd2577257c92d7e7d15",
-        "affectsGlobalScope": false
-      },
-      "../src/prisma/prisma.module.ts": {
-        "version": "54f3c1c7de599ccc487b3d6f68c6234457e278d649de5e8795ed9f10dced271c",
-        "signature": "bbc394ad2a2ec9c5dbcd9f60d4b365bf809989c90dd3c202b20fddc20e699bdf",
-        "affectsGlobalScope": false
-      },
-      "../src/users/users.module.ts": {
-        "version": "9500aa96b1b83bffcaccf71e66b45032192e20f58c8ce2d674d32c77a90d01dc",
-        "signature": "aa1725e38b5a0b4009f6a74f296f173e7926c119a60454dbd2e523861735df69",
-        "affectsGlobalScope": false
-      },
       "../src/auth/constants.ts": {
         "version": "50df74c6fdec7d763159ea0457945e5ba900ffcd7647e5a4295b0a47b2a5f414",
         "signature": "a9a6d1ac7d8e1b27ed750995232ec31127a73624abfe24dcf9111d466d1dff17",
@@ -2217,13 +2217,18 @@
         "affectsGlobalScope": false
       },
       "../src/organisations/organisations.models.ts": {
-        "version": "be29f1429ee1cc75d3a4ac20959ca3cde465a6a4709c76f2794d1b6429874d68",
-        "signature": "a9d5b5eb4cb18c6b80373fdd7a2379c56013a9d040997f1d36d937cb9035fc75",
+        "version": "1bc91cca9a33a8eac9d8a43202f53c3a3beaca478630df6525c9d1abc5ae0ac5",
+        "signature": "b46e427671be3ede3e23d162acb2ad1c047c94f1354597c51ae35de1b6eacdc4",
         "affectsGlobalScope": false
       },
       "../src/organisations/organisations.service.ts": {
-        "version": "3ecadf1714ff9b6f8694efe45613b56f2f6081dfcf23923efbc02a15a8c9eb2c",
+        "version": "7a9195911e2af454f9cc18ce77794f8eb878591c3d2a7398ea609b64b98421f1",
         "signature": "ab4e6669b5f407b24f90149faa66411ab01cbdec7a91ccab844fc9d69c510f8c",
+        "affectsGlobalScope": false
+      },
+      "../src/auth/jwt-auth.guard.ts": {
+        "version": "51fc903ffa25cb72c7ecc1aa1fed8c9d5bf7c6dd2f7f0efe9d5fa1d7490b020c",
+        "signature": "e9629b89f6cd33a040577695d89edf882e66287d30c87121f5fc07f404decd25",
         "affectsGlobalScope": false
       },
       "../src/organisations/organisations.controller.ts": {
@@ -2232,8 +2237,8 @@
         "affectsGlobalScope": false
       },
       "../src/users/users.controller.ts": {
-        "version": "9067376dfb66ea0104d27d3264f31c86115be4816d6a0e93d6dc9743f0e66f6c",
-        "signature": "5581306cd0a2e75f814f141b66edcf4599b82420ce2a197bf1b2841dec7bfa87",
+        "version": "8be1b778197c1b311b43126d1187f356721b7cf8825b235d20696b2cf8c15b1b",
+        "signature": "3eec26b1f8579c29703cff755197bfc817e0db5b6d223648515cfba4b2ff216f",
         "affectsGlobalScope": false
       },
       "../src/organisations/organisations.module.ts": {
@@ -2429,11 +2434,6 @@
       "../src/main.ts": {
         "version": "d70ef3dcdd5d5bc690c11359ec5308c8a248ae1c5ea509b88e565e3d3169bc8f",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
-        "affectsGlobalScope": false
-      },
-      "../src/users/users.models.ts": {
-        "version": "5f97ace104893f7e323203d82d7ada25b294edf8f5ae16022c5ed61948b6efb5",
-        "signature": "cdf066d438a6faa03d90b1ce4afde78bad68d5763f4deb73d8a80f2db33f08e2",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/anymatch/index.d.ts": {
@@ -4455,7 +4455,6 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/auth/auth.models.ts",
         "../src/auth/auth.service.ts",
-        "../src/auth/jwt-auth.guard.ts",
         "../src/users/users.service.ts"
       ],
       "../src/app.module.ts": [
@@ -4531,6 +4530,7 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@prisma/client/index.d.ts",
         "../src/auth/jwt-auth.guard.ts",
+        "../src/users/users.models.ts",
         "../src/users/users.service.ts"
       ],
       "../src/users/users.module.ts": [
@@ -4541,7 +4541,8 @@
       "../src/users/users.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@prisma/client/index.d.ts",
-        "../src/prisma/prisma.service.ts"
+        "../src/prisma/prisma.service.ts",
+        "../src/users/users.models.ts"
       ]
     },
     "exportedModulesMap": {
@@ -6340,11 +6341,13 @@
       ],
       "../src/users/users.controller.ts": [
         "../node_modules/@prisma/client/index.d.ts",
+        "../src/users/users.models.ts",
         "../src/users/users.service.ts"
       ],
       "../src/users/users.service.ts": [
         "../node_modules/@prisma/client/index.d.ts",
-        "../src/prisma/prisma.service.ts"
+        "../src/prisma/prisma.service.ts",
+        "../src/users/users.models.ts"
       ]
     },
     "semanticDiagnosticsPerFile": []

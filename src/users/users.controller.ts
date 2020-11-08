@@ -2,6 +2,7 @@ import { Controller, Get, Param, Put, Delete, ParseIntPipe, UseGuards } from '@n
 import { User } from '@prisma/client';
 import { UsersService } from './users.service';
 import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
+import { UsersDTO } from './users.models';
 
 @Controller('users')
 export class UsersController {
@@ -13,11 +14,10 @@ export class UsersController {
     return this.userService.getUser(id);
   }
 
-  // TODO:
   @UseGuards(JwtAuthGuard)
   @Put(':id')
-  async updateUser(): Promise<User>{
-    return this.userService.updateUser();
+  async updateUser(id: number, user: UsersDTO): Promise<User>{
+    return this.userService.updateUser(id, user);
   }
 
   @UseGuards(JwtAuthGuard)
