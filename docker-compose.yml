@@ -1,8 +1,17 @@
-# TODO: change this
-
 version: '3'
 services:
-  database: # postgres
+  nest-api: # nest js
+    container_name: erasmus_backend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    depends_on:
+      - postgres
+    env_file:
+      - .env
+  postgres: # postgres
     image: postgres:latest # use latest official postgres version
     restart: always
     container_name: prod_erasmus
@@ -15,6 +24,7 @@ services:
       - POSTGRES_DB=erasmus-test
     volumes:
       - ./config/schema.sql:/docker-entrypoint-initdb.d/init.sql
+      - postgres:/var/lib/postgresql/data
   pgadmin-compose: #pgadmin-compose
     image: dpage/pgadmin4
     container_name: test_admin
@@ -24,4 +34,8 @@ services:
     ports: 
         - "16543:80"
     depends_on: 
-        - database 
+        - postgres 
+
+volumes:
+  postgres:
+    name: nest-db
