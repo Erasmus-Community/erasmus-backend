@@ -39,3 +39,25 @@ services:
 volumes:
   postgres:
     name: nest-db
+
+# TODO: not sure if needed
+#  prisma:
+#    image: prismagraphql/prisma:1.34-heroku
+#    restart: always
+#    ports:
+#    - "4466:4466"
+#    environment:
+#      PRISMA_CONFIG: |
+#        managementApiSecret: 'aa'
+#        port: 4466
+#        databases:
+#          default:
+#            connector: postgres
+#            host: host.docker.internal
+#            port: 5432
+#            user: postgres
+#            password: postgres
+#            schema: public
+#            database: erasmus-test
+#    depends_on: 
+#      - postgres
