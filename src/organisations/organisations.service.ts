@@ -14,7 +14,7 @@ export class OrganisationsService {
     *   @returns Organisation
     */
     async findOrgById(id: number): Promise<OrganisationDto>{
-        return await this.prismaService.organisation.findOne({
+        return await this.prismaService.organisation.findFirst({
             where: {
             id: id,
             }

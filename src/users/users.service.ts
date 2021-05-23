@@ -9,7 +9,7 @@ export class UsersService {
   constructor(private prismaService: PrismaService) {}
   
   async getUser(id: number): Promise<User> {
-    return await this.prismaService.user.findOne({
+    return await this.prismaService.user.findFirst({
       where: {
         id: id
       }

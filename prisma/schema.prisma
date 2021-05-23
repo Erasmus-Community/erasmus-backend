@@ -10,7 +10,7 @@ datasource db {
 model Organisation {
   country     String?
   description String?
-  id          Int     @default(autoincrement()) @id
+  id          Int     @id @default(autoincrement())
   name        String?
   owner       Int?
   User        User?   @relation(fields: [owner], references: [id])
@@ -18,7 +18,7 @@ model Organisation {
 
 model User {
   email        String         @unique
-  id           Int            @default(autoincrement()) @id
+  id           Int            @id @default(autoincrement())
   name         String?
   password     String
   Organisation Organisation[]

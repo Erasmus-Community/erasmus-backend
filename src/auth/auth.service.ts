@@ -19,7 +19,7 @@ export class AuthService {
   * @returns - the user info if validation is correct
   */
   async validateUser(email: string, pass: string): Promise<User> {
-    const user = await this.prismaService.user.findOne({
+    const user = await this.prismaService.user.findFirst({
       where: {
         email: email
       }
