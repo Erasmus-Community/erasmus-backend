@@ -10,7 +10,7 @@ async function main() {
         data: {
             name: '',
             email: 'test@gmail.com',
-            password: await bcrypt.hash('test1234',saltRounds)
+            password: await bcrypt.hash('test123456',saltRounds)
           }
     });
 
